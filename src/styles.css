@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+body {
+    background-color: #f5f5f5;
+    font-family: 'Raleway', sans-serif;
+    user-select: none;
+}
+
+    /* Estilos del nav */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+.nav__logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav__logo__image {
+    width: 24px;
+    height: 24px;
+    padding-right: 8px;
+}
+
+.nav__logo__title {
+    height: 19px;
+    display: inline;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0;
+}
+
+.nav__menu__button {
+    padding: 14px 16px;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+}
+
+.nav__menu__button>i {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.nav__menu__button:hover {
+    background-color: #EAF2FD;
+}
+
+#navLinks {
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+
+#navLinks a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    background-color: #000000;
+}
+
+#navLinks a:hover {
+    background-color: #EAF2FD;
+    color: black;
+}
+
+    /* Estilos de la presentación */
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+}
+
+.presentation__image {
+    width: 98px;
+    height: 98px;
+    border-radius: 100%;
+    
+}
+
+.presentation__title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    margin: 16px 0px;
+}
+
+.presentation__paragraph {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #464646;
+    margin: 16px 0px;
+}
+
+.presentation__paragraph span {
+    font-weight: 700;
+}
+
+.presentation__link__conteiner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    box-sizing:border-box;
+}
+
+.presentation__link {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #464646;
+}
+
+.presentation__link:hover{
+    background-color: #EAF2FD;
+    border-bottom: 2px solid #000000;
+    color: black;
+}
+
+/* Estilos de la sección sobre mi */
+
+.about{
+    background-color: #EAF2FD;
+    padding: 16px;
+}
+
+.about__title{
+    color: #464646;
+    
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+}

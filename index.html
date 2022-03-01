@@ -4,9 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Portafolio personal de desarrollo web">
+    <meta name="keywords" content="portafolio, desarrollo web, proyectos">
+    <meta name="author" content="Guillermo Galarza">
+    <title>Repositorio | Guillermo Galarza</title>
+    <link rel="shortcut icon" href="src/logo.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/a17eedded9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/normalize.css">
+    <link rel="stylesheet" href="src/styles.css">
 </head>
 <body>
-    
+
+    <nav class="nav">
+        <div class="nav__logo">
+            <img class="nav__logo__image" draggable="false" src="src/estrellas.svg" alt="icono de estrellas">
+            <h2 class="nav__logo__title">Guillermo Galarza</h2>
+        </div>
+
+        <div onclick="myFunction()" class="nav__menu__button">
+            <i class="fa-solid fa-bars fa-2x"></i>
+        </div>
+    </nav>
+    <div id="navLinks">
+        <a href="#about">Acerca de mi</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#proyects">Experiencia</a>
+        <a href="#contact">Contacto</a>
+    </div>
+
+    <header class="presentation">
+            
+        <img class="presentation__image" draggable="false" src="src/imagenDePerfil.jpg" alt="imagen de perfil">
+
+        <div>
+            <h1 class="presentation__title">Hola, mi nombre es Guillermo Galarza y construyo páginas webs</h1>
+            <p class="presentation__paragraph">Actualemente estoy formandome en el proyecto <span>Oracle Next Education</span> en <span>Alura Latam</span>.</p>
+
+            <div class="presentation__link__conteiner">
+                <div>
+                    <a class="presentation__link" href="https://github.com/Madahva" target="_blank">Github <img src="src/Vector.svg" alt="flecha indicadora de enlace"></a>
+                </div>
+                    
+                <div>
+                    <a class="presentation__link" href="https://www.linkedin.com/in/guillermo-galarza-8a478220a/" target="_blank">Linkedin <img src="src/Vector.svg" alt="flecha indicadora de enlace"></a>
+                </div>
+                    
+                <div>
+                    <a class="presentation__link" href="" target="_blank">Curriculum <img src="src/Vector.svg" alt="flecha indicadora de enlace"></a>
+                    </div>
+                </div>
+            </div>
+
+    </header>
+
+    <main>
+        <section class="about" id="about">
+
+            <h2 class="about__title">Sobre mi</h2>
+            <p class="about__paragraph">Soy un desarrollador web de Argentina, tengo 23 años</p>
+            <img class="about__image" src="src/firma.svg" draggable="false" alt="imagen de firma">
+
+        </section>
+
+        <section class="skills" id="skills"></section>
+
+        <section class="projects" id="proyects"></section>
+
+        <section class="education"></section>
+
+        <section class="contact" id="contanct"></section>
+    </main>
+
+    <footer></footer>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("navLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+    </script>
+
 </body>
 </html>
