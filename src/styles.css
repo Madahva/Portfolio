@@ -139,8 +139,60 @@ body {
 
 .about__title{
     color: #464646;
-    
+    margin: 0;
     font-size: 22px;
     font-weight: 700;
     line-height: 26px;
 }
+
+.about__paragraph{
+    font-size: 14px;
+    line-height: 16px;
+    color: #464646;
+}
+
+.about__paragraph span{
+    font-weight: 700;
+}
+
+/* Estilos de la sección de Skills */
+
+.skills>h2{
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #464646;
+    margin: 16px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 156px 156px;
+    grid-template-rows: 118px 118px 118px 118px 118px 118px;
+    justify-content: center;
+    gap: 16px;
+}
+
+.grid-container div{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.grid-container h3{
+    color: #464646;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 16px;
+    margin-top: 8px;
+}
+
+.grid-container img{
+    width: 34px;
+    height: 47px;
+    margin: 0 16px;
+}
+
