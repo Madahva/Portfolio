@@ -130,7 +130,7 @@ body {
     color: black;
 }
 
-/* Estilos de la sección sobre mi */
+    /* Estilos de la sección sobre mi */
 
 .about{
     background-color: #EAF2FD;
@@ -155,7 +155,7 @@ body {
     font-weight: 700;
 }
 
-/* Estilos de la sección de Skills */
+    /* Estilos de la sección de Skills */
 
 .skills>h2{
     font-weight: bold;
@@ -196,3 +196,164 @@ body {
     margin: 0 16px;
 }
 
+    /* Estilos de la sección de certificados */
+
+.education{
+    background-color: #EAF2FD;
+    padding: 32px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 16px;
+}
+
+.education__tittle{
+    text-align: center;
+    color: #464646;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
+.education__certificates__container{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+}
+
+.education__certificate{
+    margin-top: 16px;
+}
+
+.education__certificate div{
+    background-color: #ffffff;
+    height: 118px;
+    width: 296px;
+    cursor: pointer;
+}
+
+.education__certificate div>img{
+    padding: 35px 113px;
+    
+}
+
+.education__certificate h3{
+    color: #464646;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 8px 0;;
+}
+
+.education__certificate p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #464646;
+    margin: 0;
+}
+
+    /* Estilos de la sección de proyectos */
+
+.projects{
+    margin: 32px;
+}
+
+.projects h2{
+    text-align: center;
+    color: #464646;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
+.projects__container{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+}
+
+.projects__container div{
+    margin-bottom: 64px;
+}
+
+.projects__container img{
+    width: 296px;
+    height: 144px;
+}
+.projects__container h3{
+    color: #464646;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 8px;
+}
+
+.projects__container p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #464646;
+    margin: 8px 0;
+}
+
+.projects__container a{
+    cursor: auto;
+}
+
+.projects__btn__repocitorio{
+    border: 1px solid #2A7AE4;
+    color: #2A7AE4;
+    width: 108px;
+    height: 40px;
+    margin-right: 16px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.projects__btn__demo{
+    color: #ffffff;
+    background-color: #2A7AE4;
+    width: 96px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+    /* Estilos del Footer */
+
+footer {
+    padding: 3px;
+    padding-left: 23px;
+    text-align: left;
+    margin-top: auto;
+    background-color: #2A7AE4;
+    color: #ffffff;
+}
+
+footer span{
+    transition: all 300ms ease;
+    font-weight:900;
+}
+
+footer span:hover{
+    color: #464646;
+}
+
+footer p{  
+    margin: 5px;
+    margin-left: 0;
+}
+
+footer a{
+    color: #fff;
+    transition: all 300ms ease;
+}
+
+footer a:hover{
+    color: #464646;
+}
