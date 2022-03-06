@@ -6,7 +6,7 @@ body {
     user-select: none;
 }
 
-    /* Estilos del nav */
+/* Estilos del nav */
 
 .nav {
     display: flex;
@@ -40,6 +40,7 @@ body {
     width: 30px;
     height: 30px;
     border-radius: 4px;
+    transition: all 300ms ease;
 }
 
 .nav__menu__button>i {
@@ -72,7 +73,7 @@ body {
     color: black;
 }
 
-    /* Estilos de la presentación */
+/* Estilos de la presentación */
 
 .presentation {
     display: flex;
@@ -85,7 +86,7 @@ body {
     width: 98px;
     height: 98px;
     border-radius: 100%;
-    
+
 }
 
 .presentation__title {
@@ -113,7 +114,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0px;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
 .presentation__link {
@@ -124,20 +125,20 @@ body {
     color: #464646;
 }
 
-.presentation__link:hover{
+.presentation__link:hover {
     background-color: #EAF2FD;
     border-bottom: 2px solid #000000;
     color: black;
 }
 
-    /* Estilos de la sección sobre mi */
+/* Estilos de la sección sobre mi */
 
-.about{
+.about {
     background-color: #EAF2FD;
     padding: 16px;
 }
 
-.about__title{
+.about__title {
     color: #464646;
     margin: 0;
     font-size: 22px;
@@ -145,19 +146,19 @@ body {
     line-height: 26px;
 }
 
-.about__paragraph{
+.about__paragraph {
     font-size: 14px;
     line-height: 16px;
     color: #464646;
 }
 
-.about__paragraph span{
+.about__paragraph span {
     font-weight: 700;
 }
 
-    /* Estilos de la sección de Skills */
+/* Estilos de la sección de Skills */
 
-.skills>h2{
+.skills>h2 {
     font-weight: bold;
     font-size: 22px;
     line-height: 26px;
@@ -166,7 +167,7 @@ body {
     margin: 16px;
 }
 
-.grid-container{
+.grid-container {
     display: grid;
     grid-template-columns: 156px 156px;
     grid-template-rows: 118px 118px 118px 118px 118px 118px;
@@ -174,14 +175,14 @@ body {
     gap: 16px;
 }
 
-.grid-container div{
+.grid-container div {
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: end;
 }
 
-.grid-container h3{
+.grid-container h3 {
     color: #464646;
     font-weight: 700;
     font-size: 16px;
@@ -190,15 +191,15 @@ body {
     margin-top: 8px;
 }
 
-.grid-container img{
+.grid-container img {
     width: 34px;
     height: 47px;
     margin: 0 16px;
 }
 
-    /* Estilos de la sección de certificados */
+/* Estilos de la sección de certificados */
 
-.education{
+.education {
     background-color: #EAF2FD;
     padding: 32px;
     padding-left: 2rem;
@@ -206,7 +207,7 @@ body {
     margin-top: 16px;
 }
 
-.education__tittle{
+.education__tittle {
     text-align: center;
     color: #464646;
     font-weight: 700;
@@ -216,37 +217,43 @@ body {
     margin-bottom: 32px;
 }
 
-.education__certificates__container{
+.education__certificates__container {
     display: flex;
-    align-items:center;
+    align-items: center;
     flex-direction: column;
 }
 
-.education__certificate{
+.education__certificate {
     margin-top: 16px;
 }
 
-.education__certificate div{
+.education__certificate div {
     background-color: #ffffff;
     height: 118px;
     width: 296px;
     cursor: pointer;
+    box-sizing: border-box;
+    transition: all 300ms ease;
 }
 
-.education__certificate div>img{
+.education__certificate div:hover{
+    border: solid 2px #2A7AE4;
+}
+
+.education__certificate div>img {
     padding: 35px 113px;
-    
 }
 
-.education__certificate h3{
+.education__certificate h3 {
     color: #464646;
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
-    margin: 8px 0;;
+    margin: 8px 0;
+    ;
 }
 
-.education__certificate p{
+.education__certificate p {
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -254,13 +261,13 @@ body {
     margin: 0;
 }
 
-    /* Estilos de la sección de proyectos */
+/* Estilos de la sección de proyectos */
 
-.projects{
+.projects {
     margin: 32px;
 }
 
-.projects h2{
+.projects h2 {
     text-align: center;
     color: #464646;
     font-weight: 700;
@@ -270,21 +277,22 @@ body {
     margin-bottom: 32px;
 }
 
-.projects__container{
+.projects__container {
     display: flex;
-    align-items:center;
+    align-items: center;
     flex-direction: column;
 }
 
-.projects__container div{
+.project__first {
     margin-bottom: 64px;
 }
 
-.projects__container img{
+.projects__container img {
     width: 296px;
     height: 144px;
 }
-.projects__container h3{
+
+.projects__container h3 {
     color: #464646;
     font-weight: 700;
     font-size: 16px;
@@ -292,7 +300,7 @@ body {
     margin-bottom: 8px;
 }
 
-.projects__container p{
+.projects__container p {
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -300,11 +308,11 @@ body {
     margin: 8px 0;
 }
 
-.projects__container a{
+.projects__container a {
     cursor: auto;
 }
 
-.projects__btn__repocitorio{
+.projects__btn__repocitorio {
     border: 1px solid #2A7AE4;
     color: #2A7AE4;
     width: 108px;
@@ -314,7 +322,12 @@ body {
     cursor: pointer;
 }
 
-.projects__btn__demo{
+.projects__btn__repocitorio:hover{
+    background-color: #EAF2FD;
+}
+
+.projects__btn__demo {
+    border: none;
     color: #ffffff;
     background-color: #2A7AE4;
     width: 96px;
@@ -322,38 +335,169 @@ body {
     margin: 0;
     padding: 0;
     cursor: pointer;
+    transition: all 300ms ease;
 }
 
-    /* Estilos del Footer */
+.projects__btn__demo:hover{
+    background-color: #464646;
+}
+
+/* Estilos del Formulario de contacto*/
+
+.contact {
+    background-color: #EAF2FD;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact h2 {
+    color: #464646;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    margin: 0 0 16px 0;
+    align-self: flex-start;
+}
+
+.contact p {
+    color: #464646;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0 0 8px 0;
+    align-self: flex-start;
+}
+
+.contact__redsocial__container {
+    display: inline;
+    margin-top: 16px;
+    margin-right: 8px;
+}
+
+.contact__redsocial__link {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #464646;
+
+}
+
+.contact__redsocial__link:hover {
+    background-color: #ffffff;
+    border-bottom: 2px solid #000000;
+    color: black;
+}
+
+.contact__redsocial__link i{
+    color: #2A7AE4;
+    transition: all 300ms ease;
+}
+
+.contact__redsocial__link i:hover{
+    color:#464646;
+}
+
+.contact__input__container {
+    border-radius: 4px;
+    border-bottom: solid 1px #C8C8C8;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    margin: 32px 0;
+    width: 296px;
+    height: 56px;
+    padding: 8px 12px;
+}
+
+.contact__input__container__mensaje {
+    height: 133px !important;
+}
+
+.contact__label {
+    color: #A2A2A2;
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    width: 272px;
+    height: 16px;
+}
+
+.contact__input__nombre,
+.contact__input__email,
+.contact__input__asunto,
+.contact__input__mensaje {
+    border: none;
+    color: #464646;
+    display: block;
+    font-size: 16px;
+    line-height: 20px;
+    width: 272px;
+    height: 20px;
+}
+
+.contact__input__mensaje {
+    width: auto;
+    height: auto;
+    resize: none;
+}
+
+.contact__input__nombre:focus,
+.contact__input__email:focus,
+.contact__input__asunto:focus,
+.contact__input__mensaje:focus {
+    outline: none;
+    caret-color: #2A7AE4;
+}
+
+.contact__label--active {
+    color: #2A7AE4;
+}
+
+.contact__input--active {
+    border-bottom: solid 2px #2A7AE4;
+}
+
+.contact__input__submit {
+    background-color: #2A7AE4;
+    border: none;
+    color: #ffffff;
+    width: 133px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 600ms ease;
+}
+
+.contact__input__submit:hover{
+    background-color: #464646;
+}
+
+/* Estilos del Footer */
 
 footer {
-    padding: 3px;
-    padding-left: 23px;
-    text-align: left;
-    margin-top: auto;
+    padding: 16px 0;
     background-color: #2A7AE4;
     color: #ffffff;
+    height: auto;
+    transition: all 600ms ease;
 }
 
-footer span{
+footer:hover{
+    background-color: #464646;
+}
+
+footer span {
     transition: all 300ms ease;
-    font-weight:900;
+    font-weight: 900;
 }
 
-footer span:hover{
-    color: #464646;
+footer span:hover {
+    color: #2A7AE4;
 }
 
-footer p{  
+footer p {
+    text-align: center;
     margin: 5px;
     margin-left: 0;
-}
-
-footer a{
-    color: #fff;
-    transition: all 300ms ease;
-}
-
-footer a:hover{
-    color: #464646;
 }
