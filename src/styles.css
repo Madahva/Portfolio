@@ -40,6 +40,7 @@ body {
 }
 
 .nav__menu__button {
+    background-color: #EAF2FD;
     padding: 14px 16px;
     width: 30px;
     height: 30px;
@@ -54,7 +55,7 @@ body {
 }
 
 .nav__menu__button:hover {
-    background-color: #EAF2FD;
+    background-color: #ffffff;
 }
 
 #navLinks {
@@ -90,7 +91,6 @@ body {
     width: 98px;
     height: 98px;
     border-radius: 100%;
-
 }
 
 .presentation__title {
@@ -218,7 +218,7 @@ body {
     font-size: 22px;
     line-height: 26px;
     margin-top: 0;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
 }
 
 .education__certificates__container {
@@ -513,4 +513,140 @@ footer p {
 
 #btn__ir-arriba:hover {
     background: #464646;
+}
+
+@media(min-width: 768px) {
+
+    .nav{
+        padding: 16px 32px;
+    }
+
+    .presentation {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 32px;
+    }
+
+    .presentation__image {
+        width: 146px;
+        height: 146px;
+        order: 2;
+    }
+
+    .presentation div {
+        max-width: 500px;
+        order: 1;
+    }
+
+    .about {
+        padding: 32px;
+    }
+
+    .skills h2 {
+        margin: 32px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 224px 224px 224px;
+        grid-template-rows: 118px 118px 118px 118px;
+    }
+
+    .education {
+        margin-top: 32px;
+    }
+
+    .education__certificates__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .education__certificate {
+        width: 224px;
+
+    }
+
+    .education__certificate div {
+        width: 224px;
+    }
+
+    .education__certificate:nth-child(1) {
+        order: 1;
+        margin-right: 16px;
+    }
+
+    .education__certificate:nth-child(2) {
+        order: 5;
+        width: auto;
+    }
+
+    .education__certificate:nth-child(3) {
+        order: 2;
+    }
+
+    .education__certificate:nth-child(4) {
+        order: 3;
+        margin-left: 16px;
+    }
+
+    .education__certificate:nth-child(5) {
+        order: 4;
+        margin-right: 16px;
+    }
+
+    .education__certificate div>img {
+        padding: 35px 77px
+    }
+
+    .projects__container img {
+        width: 704px;
+        height: 320px;
+    }
+
+    .projects__btn__repocitorio {
+        width: 116px;
+        height: 51px;
+    }
+
+    .projects__btn__demo {
+        width: 105px;
+        height: 51px;
+    }
+
+    .contact__input__container {
+        width: 704px;
+        height: 56px;
+    }
+
+    .contact__label {
+        width: 680px;
+        height: 16px;
+    }
+
+    .contact__input__nombre,
+    .contact__input__email,
+    .contact__input__asunto,
+    .contact__input__mensaje {
+        width: 680px;
+        height: 20px;
+    }
+
+    .contact__input__mensaje {
+        height: 90px;
+    }
+
+    footer{
+        padding: 32px;
+    }
+
+    #btn__ir-arriba {
+        bottom: 40px;
+        right: 40px;
+    }
+}
+
+@media(min-width:1000px) {
+    body {
+        background-color: #656565;
+    }
 }
