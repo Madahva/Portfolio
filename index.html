@@ -23,6 +23,13 @@
             <h2 class="nav__logo__title">Guillermo Galarza</h2>
         </div>
 
+        <div id="navLinksDesktop">
+            <a href="#about">Acerca de mi</a>
+            <a href="#skills">Habilidades</a>
+            <a href="#proyects">Experiencia</a>
+            <a href="#contact">Contacto</a>
+        </div>
+
         <div onclick="myFunction()" class="nav__menu__button">
             <i class="fa-solid fa-bars fa-2x"></i>
         </div>
@@ -188,75 +195,90 @@
         <section class="projects" id="proyects">
             <h2>Experiencia profesional</h2>
             <div class="projects__container">
-                <div class="project__first">
+                <div class="project">
                     <img draggable="false" src="src/Challenge-Alura-1.png" alt="Encriptador de texto">
-                    <h3>Encriptador de texto</h3>
-                    <p>Challenge Oracle</p>
-                    <a target="_blank" href="https://github.com/Madahva/Challenge-Alura-1"><input
-                            class="projects__btn__repocitorio" type="button" value="Repocitório"></a>
-                    <a target="_blank" href="https://madahva.github.io/Challenge-Alura-1/"><input
-                            class="projects__btn__demo" type="button" value="Ver demo"></a>
+
+                    <div>
+                        <h3>Encriptador de texto</h3>
+                        <p>Challenge Oracle</p>
+                        <a target="_blank" href="https://github.com/Madahva/Challenge-Alura-1"><input
+                                class="projects__btn__repocitorio" type="button" value="Repocitório"></a>
+                        <a target="_blank" href="https://madahva.github.io/Challenge-Alura-1/"><input
+                                class="projects__btn__demo" type="button" value="Ver demo"></a>
+                    </div>
 
                 </div>
-                <div>
+                <div class="project">
                     <img draggable="false" src="src/Challenge-Alura-2.png" alt="Juego del ahoracado">
-                    <h3>Juego creado con HTML y JavaScript</h3>
-                    <p>Challenge Oracle</p>
-                    <a target="_blank" href="https://github.com/Madahva/Challenge-Alura-2-Ahoracado"><input
-                            class="projects__btn__repocitorio" type="button" value="Repocitório"></a>
-                    <a target="_blank" href="https://madahva.github.io/Challenge-Alura-2-Ahoracado/"><input
-                            class="projects__btn__demo" type="button" value="Ver demo"></a>
+
+                    <div>
+
+                        <h3>Juego creado con HTML y JavaScript</h3>
+                        <p>Challenge Oracle</p>
+                        <a target="_blank" href="https://github.com/Madahva/Challenge-Alura-2-Ahoracado"><input
+                                class="projects__btn__repocitorio" type="button" value="Repocitório"></a>
+                        <a target="_blank" href="https://madahva.github.io/Challenge-Alura-2-Ahoracado/"><input
+                                class="projects__btn__demo" type="button" value="Ver demo"></a>
+
+                    </div>
+
                 </div>
             </div>
         </section>
 
         <section class="contact" id="contact">
-            <h2>Contacto</h2>
-            <p>¿Quieres contactarme?</p>
-            <p>Contactame a través del formulario o de mis redes sociales.</p>
+            <img src="src/contacto.png" alt="imagen de telefono">
+            <div class="contact__formulario">
 
-            <div>
-                <div class="contact__redsocial__container">
-                    <a class="contact__redsocial__link" href="https://github.com/Madahva" target="_blank"><i
-                            class="fab fa-github fa-2x"></i> Github <img src="src/Vector.svg"
-                            alt="flecha indicadora de enlace"></a>
+                <h2>Contacto</h2>
+                <p>¿Quieres contactarme?</p>
+                <p>Contactame a través del formulario o de mis redes sociales.</p>
+
+                <div>
+                    <div class="contact__redsocial__container">
+                        <a class="contact__redsocial__link" href="https://github.com/Madahva" target="_blank"><i
+                                class="fab fa-github fa-2x"></i> Github <img src="src/Vector.svg"
+                                alt="flecha indicadora de enlace"></a>
+                    </div>
+
+                    <div class="contact__redsocial__container">
+                        <a class="contact__redsocial__link"
+                            href="https://www.linkedin.com/in/guillermo-galarza-8a478220a/" target="_blank"><i
+                                class="fab fa-linkedin fa-2x"></i> Linkedin <img src="src/Vector.svg"
+                                alt="flecha indicadora de enlace"></a>
+                    </div>
                 </div>
 
-                <div class="contact__redsocial__container">
-                    <a class="contact__redsocial__link" href="https://www.linkedin.com/in/guillermo-galarza-8a478220a/"
-                        target="_blank"><i class="fab fa-linkedin fa-2x"></i> Linkedin <img src="src/Vector.svg"
-                            alt="flecha indicadora de enlace"></a>
-                </div>
+
+                <form>
+                    <div id="inputNombre" class="contact__input__container">
+                        <label id="nombreLabel" class="contact__label" for="nombre">Nombre</label>
+                        <input id="nombre" class="contact__input__nombre" spellcheck="false" required type="text">
+                    </div>
+
+                    <div id="inputEmail" class="contact__input__container">
+                        <label id="emailLabel" class="contact__label" for="email">E-mail</label>
+                        <input id="email" class="contact__input__email" spellcheck="false" required type="email">
+                    </div>
+
+                    <div id="inputAsunto" class="contact__input__container">
+                        <label id="asuntoLabel" class="contact__label" for="asunto">Asunto</label>
+                        <input id="asunto" class="contact__input__asunto" spellcheck="false" required type="text">
+                    </div>
+
+                    <div id="inputMensaje" class="contact__input__container contact__input__container__mensaje">
+                        <label id="mensajeLabel" class="contact__label" for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" class="contact__input__mensaje" cols="28" rows="5" spellcheck="false"
+                            required></textarea>
+                    </div>
+
+                    <div class="contact__input__submit__container">
+                        <input class="contact__input__submit" type="submit" value="Enviar mensaje">
+                    </div>
+
+                </form>
+
             </div>
-
-
-            <form>
-                <div id="inputNombre" class="contact__input__container">
-                    <label id="nombreLabel" class="contact__label" for="nombre">Nombre</label>
-                    <input id="nombre" class="contact__input__nombre" spellcheck="false" required type="text">
-                </div>
-
-                <div id="inputEmail" class="contact__input__container">
-                    <label id="emailLabel" class="contact__label" for="email">E-mail</label>
-                    <input id="email" class="contact__input__email" spellcheck="false" required type="email">
-                </div>
-
-                <div id="inputAsunto" class="contact__input__container">
-                    <label id="asuntoLabel" class="contact__label" for="asunto">Asunto</label>
-                    <input id="asunto" class="contact__input__asunto" spellcheck="false" required type="text">
-                </div>
-
-                <div id="inputMensaje" class="contact__input__container contact__input__container__mensaje">
-                    <label id="mensajeLabel" class="contact__label" for="mensaje">Mensaje</label>
-                    <textarea id="mensaje" class="contact__input__mensaje" cols="28" rows="5" spellcheck="false"
-                        required></textarea>
-                </div>
-
-                <div class="contact__input__submit__container">
-                    <input class="contact__input__submit" type="submit" value="Enviar mensaje">
-                </div>
-
-            </form>
         </section>
     </main>
     <span id="btn__ir-arriba"><i class="fa-solid fa-angles-up"></i></span>
