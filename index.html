@@ -3,16 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>Portfolio | Guillermo Galarza</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portafolio personal de desarrollo web">
     <meta name="keywords" content="portafolio, desarrollo web, proyectos">
     <meta name="author" content="Guillermo Galarza">
-    <title>Repositorio | Guillermo Galarza</title>
     <link rel="shortcut icon" href="src/logo.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/a17eedded9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="src/normalize.css">
     <link rel="stylesheet" href="src/styles.css">
+    <script src="src/script.js" defer></script>
 </head>
 
 <body>
@@ -24,10 +25,10 @@
         </div>
 
         <div id="navLinksDesktop">
-            <a href="#about">Acerca de mi</a>
-            <a href="#skills">Habilidades</a>
-            <a href="#proyects">Experiencia</a>
-            <a href="#contact">Contacto</a>
+            <a href="#about">About me</a>
+            <a href="#skills">Skills</a>
+            <a href="#proyects">Experience</a>
+            <a href="#contact">Contact me</a>
         </div>
 
         <div onclick="myFunction()" class="nav__menu__button">
@@ -46,9 +47,9 @@
         <img class="presentation__image" draggable="false" src="src/imagenDePerfil.jpg" alt="imagen de perfil">
 
         <div>
-            <h1 class="presentation__title">Hola, mi nombre es Guillermo Galarza y construyo páginas webs</h1>
-            <p class="presentation__paragraph">Actualemente estoy formandome en el proyecto <span>Oracle Next
-                    Education</span> en <span>Alura Latam</span>.</p>
+            <h1 class="presentation__title">Guillermo Galarza</h1>
+            <p class="presentation__paragraph">I am a web developer, with a lot of will to learn and improve. My
+                favorite technologies are <span>CSS, JavaScript and React</span></p>
 
             <div class="presentation__link__conteiner">
                 <div>
@@ -73,14 +74,14 @@
     <main>
         <section class="about" id="about">
 
-            <h2 class="about__title">Sobre mi</h2>
-            <p class="about__paragraph">Soy desarrollador web <span>Front-end</span> y <span>Back-end</span>. Me gusta
-                capacitarme tomando cursos y aprender nuevas tecnologías.</p>
-            <p class="about__paragraph">Creo sitios webs responsive, rápidos y construidos con las mejores prácticas.
+            <h2 class="about__title">About me</h2>
+            <p class="about__paragraph">I am a <span>Front-end</span> and <span>Back-end</span> web developer. I like to
+                train myself by taking courses and learning new technologies.</p>
+            <p class="about__paragraph">I create responsive websites, fast and built with the best practices.
             </p>
-            <p class="about__paragraph">Soy una persona bien organizada, solucionador de problemas y con gran atención a
-                los detalles.</p>
-            <p class="about__paragraph">Mis hobbies son leer, aprender idiomas y entrenar.</p>
+            <p class="about__paragraph">I am a well organized person, problem solver and with great attention to detail.
+            </p>
+            <p class="about__paragraph">My hobbies are reading, learning languages and training.</p>
 
             <img class="about__image" src="src/firma.svg" draggable="false" alt="imagen de firma">
 
@@ -142,7 +143,7 @@
         </section>
 
         <section class="education">
-            <h2 class="education__tittle">Formación</h2>
+            <h2 class="education__tittle">Education</h2>
             <div class="education__certificates__container">
                 <div class="education__certificate">
                     <a target="_blank" href="src/certificados/Certificado_FRONT-END.png">
@@ -150,7 +151,7 @@
                             <img src="src/certificados/Alura_Logo.svg" draggable="false" alt="Alura Logo">
                         </div>
                     </a>
-                    <h3>Desarrollador Front-End</h3>
+                    <h3>Front-End web developer</h3>
                     <p>Alura Latam</p>
                 </div>
                 <div class="education__certificate">
@@ -159,7 +160,7 @@
                             <img src="src/certificados/Alura_Logo.svg" draggable="false" alt="Alura Logo">
                         </div>
                     </a>
-                    <h3>Fundamentos de la programación</h3>
+                    <h3>Programming fundamentals</h3>
                     <p>Alura Latam</p>
                 </div>
                 <div class="education__certificate">
@@ -171,29 +172,11 @@
                     <h3>Business Agility</h3>
                     <p>Alura Latam</p>
                 </div>
-                <div class="education__certificate">
-                    <a target="_blank" href="src/certificados/Certificado_EMPRENDIMIENTO.png">
-                        <div>
-                            <img src="src/certificados/Alura_Logo.svg" draggable="false" alt="Alura Logo">
-                        </div>
-                    </a>
-                    <h3>Emprendimiento</h3>
-                    <p>Alura Latam</p>
-                </div>
-                <div class="education__certificate">
-                    <a target="_blank" href="src/certificados/Certificado_DESARROLLO PERSONAL.png">
-                        <div>
-                            <img src="src/certificados/Alura_Logo.svg" draggable="false" alt="Alura Logo">
-                        </div>
-                    </a>
-                    <h3>Desarrollo personal</h3>
-                    <p>Alura Latam</p>
-                </div>
             </div>
         </section>
 
         <section class="projects" id="proyects">
-            <h2>Experiencia profesional</h2>
+            <h2>Experience</h2>
             <div class="projects__container">
                 <div class="project">
                     <img draggable="false" src="src/Challenge-Alura-1.png" alt="Encriptador de texto">
@@ -202,9 +185,9 @@
                         <h3>Encriptador de texto</h3>
                         <p>Challenge Oracle</p>
                         <a target="_blank" href="https://github.com/Madahva/Challenge-Alura-1"><input
-                                class="projects__btn__repocitorio" type="button" value="Repocitório"></a>
+                                class="projects__btn__repocitorio" type="button" value="Repository"></a>
                         <a target="_blank" href="https://madahva.github.io/Challenge-Alura-1/"><input
-                                class="projects__btn__demo" type="button" value="Ver demo"></a>
+                                class="projects__btn__demo" type="button" value="Demo"></a>
                     </div>
 
                 </div>
@@ -216,9 +199,9 @@
                         <h3>Juego creado con HTML y JavaScript</h3>
                         <p>Challenge Oracle</p>
                         <a target="_blank" href="https://github.com/Madahva/Challenge-Alura-2-Ahoracado"><input
-                                class="projects__btn__repocitorio" type="button" value="Repocitório"></a>
+                                class="projects__btn__repocitorio" type="button" value="Repository"></a>
                         <a target="_blank" href="https://madahva.github.io/Challenge-Alura-2-Ahoracado/"><input
-                                class="projects__btn__demo" type="button" value="Ver demo"></a>
+                                class="projects__btn__demo" type="button" value="Demo"></a>
 
                     </div>
 
@@ -230,9 +213,9 @@
             <img src="src/contacto.png" alt="imagen de telefono">
             <div class="contact__formulario">
 
-                <h2>Contacto</h2>
-                <p>¿Quieres contactarme?</p>
-                <p>Contactame a través del formulario o de mis redes sociales.</p>
+                <h2>Contact me</h2>
+                <p>Do you want to contact me?</p>
+                <p>Contact me through the form or my social networks.</p>
 
                 <div>
                     <div class="contact__redsocial__container">
@@ -250,30 +233,30 @@
                 </div>
 
 
-                <form>
+                <form action="https://formspree.io/f/xknykwze" method="POST">
                     <div id="inputNombre" class="contact__input__container">
-                        <label id="nombreLabel" class="contact__label" for="nombre">Nombre</label>
-                        <input id="nombre" class="contact__input__nombre" spellcheck="false" required type="text">
+                        <label id="nombreLabel" class="contact__label" for="nombre">Name</label>
+                        <input id="nombre" name="Name" class="contact__input__nombre" spellcheck="false" required type="text">
                     </div>
 
                     <div id="inputEmail" class="contact__input__container">
                         <label id="emailLabel" class="contact__label" for="email">E-mail</label>
-                        <input id="email" class="contact__input__email" spellcheck="false" required type="email">
+                        <input id="email" name="Email" class="contact__input__email" spellcheck="false" required type="email">
                     </div>
 
                     <div id="inputAsunto" class="contact__input__container">
-                        <label id="asuntoLabel" class="contact__label" for="asunto">Asunto</label>
-                        <input id="asunto" class="contact__input__asunto" spellcheck="false" required type="text">
+                        <label id="asuntoLabel" class="contact__label" for="asunto">Subject</label>
+                        <input id="asunto" name="Subject" class="contact__input__asunto" spellcheck="false" required type="text">
                     </div>
 
                     <div id="inputMensaje" class="contact__input__container contact__input__container__mensaje">
-                        <label id="mensajeLabel" class="contact__label" for="mensaje">Mensaje</label>
-                        <textarea id="mensaje" class="contact__input__mensaje" cols="28" rows="5" spellcheck="false"
+                        <label id="mensajeLabel" class="contact__label" for="mensaje">Message</label>
+                        <textarea id="mensaje" name="Message" class="contact__input__mensaje" cols="28" rows="5" spellcheck="false"
                             required></textarea>
                     </div>
 
                     <div class="contact__input__submit__container">
-                        <input class="contact__input__submit" type="submit" value="Enviar mensaje">
+                        <input class="contact__input__submit" type="submit" value="Send Message">
                     </div>
 
                 </form>
@@ -283,11 +266,8 @@
     </main>
     <span id="btn__ir-arriba"><i class="fa-solid fa-angles-up"></i></span>
     <footer id="footer">
-        <p><span>Desarrollado por:</span> Guillermo Galarza</p>
+        <p><span>Developed by:</span> Guillermo Galarza</p>
     </footer>
-
-    <script src="src/script.js"></script>
-
 </body>
 
 </html>

@@ -562,17 +562,17 @@ footer p {
 
     .education {
         margin-top: 32px;
-        padding-left: 15%;
+        text-align: center;
     }
 
     .education__certificates__container {
         flex-direction: row;
         flex-wrap: wrap;
+        padding: 3rem;
     }
 
     .education__certificate {
-        width: 224px;
-
+        width: 33.33%;
     }
 
     .education__certificate div {
@@ -722,7 +722,7 @@ footer p {
 
     .presentation__paragraph {
         font-size: 22px;
-        line-height: 26px;
+        line-height: 2.3rem;
     }
 
     .about {
@@ -767,7 +767,7 @@ footer p {
     }
 
     .education__certificate {
-        width: 32.43%;
+        width: 32.3%;
         height: 49%;
     }
 
