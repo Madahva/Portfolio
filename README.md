@@ -2,4 +2,4 @@
 
 You can see my portfolio here: https://madahva.github.io/Portafolio/
 
-![madahva github io_challenge-alura-3-portafolio_ (1)](https://user-images.githubusercontent.com/89199369/167233206-71b36f43-b89c-4b77-9f9d-671982a1312e.png)
+![madahva github io_Portafolio_](https://user-images.githubusercontent.com/89199369/167271880-5764172f-768a-485c-b662-7ef0d2cb2d32.png)
