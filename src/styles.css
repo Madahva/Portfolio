@@ -829,6 +829,7 @@ footer p {
 
     .projects__container .project div {
         max-width: 369px;
+        padding-right: 2rem;
     }
 
     .projects__container .project:first-child img {
