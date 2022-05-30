@@ -1,0 +1,158 @@
+.projects {
+  align-items: center;
+  background-color: var(--bg--color);
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 950px;
+  padding: 0 0 1rem 0;
+}
+
+.projects h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 2rem 0;
+  text-align: center;
+}
+
+.projects p {
+  color: var(--black-para);
+  line-height: 22px;
+  margin: 0 0 4rem 0;
+  text-align: center;
+}
+
+
+.projects img {
+  box-shadow: 0px 10px 50px 0px #EAF2FD;
+  cursor: pointer;
+  height: auto;
+  max-width: 950px;
+  width: 100%;
+}
+
+/* .projects img:hover {
+    transform: scale(1.05, 1.05);
+    transition: all 400ms ease-in;
+} */
+
+.projects__text {
+  margin: 0 0 4rem var(--pading-movile);
+}
+
+
+.projects__text h3 {
+  color: var(--black-para);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 19px;
+  margin: 1rem 0 0 0;
+}
+
+.projects__text p {
+  color: var(--black-para);
+  font-size: 14px;
+  font-weight: 500;
+  text-align: start;
+  margin: .5rem 0 1rem 0;
+}
+
+.projects__btn-repocitorio {
+  border: 1px solid var(--primary--color);
+  box-sizing: border-box;
+  color: var(--primary--color);
+  cursor: pointer;
+  height: 40px;
+  margin-right: 16px;
+  padding: .5rem;
+  text-decoration: none;
+}
+
+.projects__btn-repocitorio:hover {
+  background-color: var(--second--color);
+  transform: scale(1.1, 1.1);
+  transition: all 400ms ease;
+}
+
+.projects__btn-demo {
+  background-color: var(--primary--color);
+  border: none;
+  color: var(--white);
+  cursor: pointer;
+  margin: 0;
+  padding: .6rem;
+  text-decoration: none;
+  transition: all 300ms ease;
+}
+
+.projects__btn-demo:hover {
+  background-color: var(--hover);
+  transform: scale(1.1, 1.1);
+  transition: all 400ms ease;
+}
+
+@media(min-width: 1000px) {
+  .projects {
+    padding: 4rem 2rem;
+  }
+
+  .projects h2 {
+    font-size: 2rem;
+  }
+
+  .projects p {
+    font-size: 1.2rem;
+  }
+
+  .projects__container {
+    align-items: center;
+    display: flex;
+    margin: 0 0 6rem 0;
+    gap: 2rem;
+  }
+
+  .projects__container img {
+    width: 740px;
+    height: 390px;
+  }
+
+  .projects__text {
+    margin: 0;
+  }
+
+  .projects__text h3 {
+    font-size: 1.4rem;
+    line-height: 22px;
+  }
+
+  .projects__text p {
+    font-size: 1rem;
+    margin: .8rem 0;
+  }
+
+  .projects__btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .projects__btn-repocitorio {
+    padding: 0.79rem 1rem;
+
+    height: fit-content;
+    margin: 0;
+    min-width: fit-content;
+  }
+
+  .projects__btn-demo {
+    padding: 0.8rem 1rem;
+    height: fit-content;
+    margin: 0;
+    min-width: fit-content;
+  }
+
+  .toTurn a {
+    order: 2;
+  }
+}

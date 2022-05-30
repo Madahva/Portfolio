@@ -1,0 +1,75 @@
+.skills {
+    padding: 4rem 0;
+    background-color: var(--bg--color);
+}
+
+.skills>h2 {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 26px;
+    margin: 0 0 2rem 0;
+    text-align: center;
+}
+
+.skills>p {
+    color: var(--black-para);
+    text-align: center;
+    line-height: 22px;
+    padding: 0 1rem 4rem 1rem;
+    margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(2, 10rem);
+    grid-template-rows: repeat(6, 7.5rem);
+    justify-content: center;
+}
+
+.grid-container div {
+    background-color: var(--white);
+    border-radius: .3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.grid-container h3 {
+    color: var(--black-para);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    margin-top: 8px;
+    margin: 16px;
+}
+
+.grid-container img {
+    height: 47px;
+    margin: 0 16px;
+    width: 34px;
+}
+
+
+@media(min-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 10rem);
+        grid-template-rows: repeat(4, 7.5rem);
+    }
+}
+
+@media(min-width: 1024px) {
+    .skills>h2 {
+        font-size: 2rem;
+    }
+
+    .skills>p {
+        font-size: 1.2rem;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(6, 9rem);
+        grid-template-rows: repeat(2, 7.5rem);
+    }
+
+}
