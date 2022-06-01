@@ -162,3 +162,11 @@
     transition: all 300ms ease;
   }
 }
+
+@media(min-width: 1200px) {
+
+  .nav {
+    max-width: 1000px;
+    padding-inline: 0;
+  }
+}

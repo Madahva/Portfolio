@@ -1,5 +1,6 @@
 import "../styles/Hero.css";
 import profilePicture from "../images/profile picture.jpg";
+import resume from "../images/resume.pdf";
 import { BiLinkExternal } from "react-icons/bi";
 
 const Hero = () => {
@@ -51,7 +52,7 @@ const Hero = () => {
 
           <a
             className="presentation__link"
-            href="../src/CurriculumVitae.pdf"
+            href={resume}
             target="_blank"
           >
             Curriculum <BiLinkExternal />

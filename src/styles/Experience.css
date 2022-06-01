@@ -133,7 +133,7 @@
   .projects__btn-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 1rem;
   }
 
@@ -155,4 +155,23 @@
   .toTurn a {
     order: 2;
   }
+}
+
+@media(min-width: 1200px) {
+
+  .projects {
+    padding-inline: 0;
+    max-width: 1000px;
+  }
+
+  .projects img {
+    max-width: 1000px;
+
+  }
+
+  .projects__container {
+    min-width: 1000px;
+    justify-content: space-between;
+  }
+
 }

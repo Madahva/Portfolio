@@ -1,5 +1,7 @@
 import "../styles/ContactMe.css";
+import contactImage from "../images/contact.svg";
 import { BiLinkExternal } from "react-icons/bi";
+import resume from "../images/resume.pdf";
 
 const ContactMe = () => {
   const activeName = () => {
@@ -41,7 +43,7 @@ const ContactMe = () => {
   return (
     <section className="contact" id="contact">
       <div  className="contact__container">
-        <img src="src\images\contacto.png" alt="imagen de telefono" />
+        <img src={contactImage} alt="imagen de telefono" />
         <div className="contact__formulario">
           <h2 className="english">Get in touch</h2>
           <p className="english">
@@ -79,7 +81,7 @@ const ContactMe = () => {
             <div className="contact__redsocial">
               <a
                 className="presentation__link"
-                href="../src/CurriculumVitae.pdf"
+                href={resume}
                 target="_blank"
               >
                 Curriculum <BiLinkExternal />

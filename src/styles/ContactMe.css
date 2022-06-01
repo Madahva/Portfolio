@@ -8,6 +8,7 @@
 
 .contact img {
     display: none;
+    max-width: 464px;
 }
 
 .contact h2 {
@@ -157,4 +158,21 @@ form {
     .contact input {
         font-size: 1rem;
     }
+}
+
+@media(min-width: 1200px) {
+
+    .contact__container {
+        max-width: 1050px;
+        gap: 46px;
+    }
+
+    .contact__formulario {
+        max-width: 454px;
+    }
+
+    .contact img {
+        max-width: 500px;
+    }
+
 }

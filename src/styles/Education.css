@@ -117,17 +117,40 @@
     flex-direction: row;
     justify-content: space-between;
     min-width: 950px;
-    margin: 0 auto; 
+    margin: 0 auto;
   }
 
   .education__certificate div {
     min-width: 300px;
   }
+
   .education__certificate h3 {
     font-size: 1.2rem
   }
-  
+
   .education__certificate p {
     font-size: 1rem;
   }
+}
+
+
+@media(min-width: 1200px) {
+
+  .education__para {
+    max-width: 1000px;
+  }
+
+  .para-first {
+    max-width: 1000px;
+  }
+
+  .education__certificates-container {
+    min-width: 1000px;
+    justify-content: space-between;
+  }
+
+  .education__certificate div {
+    min-width: 315px;
+  }
+
 }

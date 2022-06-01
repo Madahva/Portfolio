@@ -23,3 +23,9 @@
     transform: scale(0.8, 0.8);
     transition: all 1000ms ease;
 }
+
+@media(min-width: 1200px) {
+    #toTopBtn {
+        right: 40px;
+    }
+}

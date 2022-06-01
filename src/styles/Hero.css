@@ -108,3 +108,11 @@
     height: 248px;
   }
 }
+
+@media(min-width: 1200px) {
+
+  .presentation {
+    max-width: 1000px;
+    padding-inline: 0;
+  }
+}

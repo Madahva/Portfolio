@@ -73,3 +73,18 @@
     }
 
 }
+
+@media(min-width: 1200px) {
+    .skills {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    
+    .grid-container {
+        justify-content: space-between;
+    }
+
+    .grid-container div {
+        min-width: 150px;
+    }
+}
