@@ -9,8 +9,8 @@ const AboutMe = () => {
           <h2 className="about__title">About me</h2>
 
           <p className="about__paragraph">
-            I'm a <span>Full-stack</span> web developer focused on
-            <span> Front-end</span>.
+            I'm a <strong><span>Full-stack</span></strong> web developer focused on
+            <strong><span> Front-end</span></strong>.
           </p>
 
           <p className="about__paragraph">
@@ -36,8 +36,8 @@ const AboutMe = () => {
           <h2 className="about__title">Sobre mí</h2>
 
           <p className="about__paragraph">
-            Soy un desarrollador web <span>Full-stack</span> centrado en el
-            <span> Front-end</span>.
+            Soy un desarrollador web <strong><span>Full-stack</span></strong> centrado en el
+            <strong><span> Front-end</span></strong>.
           </p>
 
           <p className="about__paragraph">

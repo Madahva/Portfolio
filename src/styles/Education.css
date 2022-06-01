@@ -34,13 +34,14 @@
   color: #000;
   font-weight: 700;
   text-decoration: none;
+  padding: .2rem;
+
 }
 
 .education__para-link:hover {
   background: rgb(42, 122, 228);
   background: linear-gradient(90deg, rgba(42, 122, 228, 1) 0%, rgba(85, 149, 233, 1) 100%);
   color: #fff;
-  padding: 0 .2rem;
 }
 
 .education span {
@@ -63,6 +64,7 @@
   background-image: url(../images/certificates/ONE_logo.webp);
   background-position: center left 65%;
   background-repeat: no-repeat;
+  border: solid 2px transparent;
   box-sizing: border-box;
   cursor: pointer;
   height: 180px;

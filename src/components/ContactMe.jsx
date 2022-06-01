@@ -43,12 +43,12 @@ const ContactMe = () => {
   return (
     <section className="contact" id="contact">
       <div  className="contact__container">
-        <img src={contactImage} alt="imagen de telefono" />
+        <img src={contactImage} alt="imagen de telefono" draggable="false" />
         <div className="contact__formulario">
           <h2 className="english">Get in touch</h2>
           <p className="english">
             If you wanna get in touch, talk to me about a project collaboration
-            or just say hi, fill up the form below or feel free to contact me
+            or just <i>say hi</i>, fill up the form below or feel free to contact me
             via Linkedin.
           </p>
 

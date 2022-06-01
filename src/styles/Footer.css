@@ -1,16 +1,18 @@
 footer {
+  align-items: center;
   background-color: var(--bg--color);
   color: var(--black-para);
+  display: flex;
   font-size: 0.8rem;
+  font-style: italic;
   height: auto;
+  justify-content: center;
   padding: 16px 0;
   text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 footer span {
+  font-style: normal;
   font-weight: 900;
 }
 

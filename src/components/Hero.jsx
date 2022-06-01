@@ -20,7 +20,7 @@ const Hero = () => {
             I am a web developer, with a lot of will to learn and improve.
           </p>
           <p className="presentation__paragraph">
-            My favorite technologies are <span>CSS, JavaScript and React.</span>
+            My favorite technologies are <strong><span>CSS, JavaScript and React.</span></strong>
           </p>
         </div>
 
@@ -29,7 +29,7 @@ const Hero = () => {
             Soy un desarrollador web con mucha predisposición para aprender y mejorar.
           </p>
           <p className="presentation__paragraph">
-            Mis tecnologías favoritas son <span>CSS, JavaScript y React.</span>
+            Mis tecnologías favoritas son <strong><span>CSS, JavaScript y React.</span></strong>
           </p>
         </div>
 

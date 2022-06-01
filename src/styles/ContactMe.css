@@ -30,6 +30,12 @@
     max-width: 950px;
 }
 
+.contact i {
+    color: #2A7AE4;
+    font-style: normal;
+    font-weight: 500;
+}
+
 .contact__redsocial__container {
     align-items: center;
     display: flex;

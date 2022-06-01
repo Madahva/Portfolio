@@ -17,13 +17,16 @@ const Education = () => {
           target="_blank"
           href="https://www.oracle.com/ar/education/oracle-next-education/#curso"
         >
-          ONE – Oracle Next Education.
+          <strong>ONE – Oracle Next Education.</strong>
         </a>
       </p>
       <p className="education__para english">
-        <span>ONE</span> is an intensive training program that aims to train and
-        develop people with high potential so they can join challenging projects
-        in different technological teams.
+        <strong>
+          <span>ONE</span>
+        </strong>{" "}
+        is an intensive training program that aims to train and develop people
+        with high potential so they can join challenging projects in different
+        technological teams.
       </p>
       <p className="para-first spanish">
         Tengo la buena fortuna de ser formado en{" "}
@@ -32,14 +35,16 @@ const Education = () => {
           target="_blank"
           href="https://www.oracle.com/ar/education/oracle-next-education/#curso"
         >
-          ONE – Oracle Next Education.
+          <strong>ONE – Oracle Next Education.</strong>
         </a>
       </p>
       <p className="education__para spanish">
-        <span>ONE</span> es un programa de formación intensiva que tiene como
-        finalidad capacitar y desarrollar a personas con alto potencial para que
-        luego se sumen a proyectos desafiantes en diferentes equipos de
-        tecnología.
+        <strong>
+          <span>ONE</span>
+        </strong>{" "}
+        es un programa de formación intensiva que tiene como finalidad capacitar
+        y desarrollar a personas con alto potencial para que luego se sumen a
+        proyectos desafiantes en diferentes equipos de tecnología.
       </p>
       <div className="education__certificates-container">
         <Certificate

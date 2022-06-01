@@ -31,11 +31,6 @@
   width: 100%;
 }
 
-/* .projects img:hover {
-    transform: scale(1.05, 1.05);
-    transition: all 400ms ease-in;
-} */
-
 .projects__text {
   margin: 0 0 4rem var(--pading-movile);
 }
@@ -75,8 +70,8 @@
 }
 
 .projects__btn-demo {
-  background: rgb(42,122,228);
-  background: linear-gradient(90deg, rgba(42,122,228,1) 0%, rgba(85,149,233,1) 100%);
+  background: rgb(42, 122, 228);
+  background: linear-gradient(90deg, rgba(42, 122, 228, 1) 0%, rgba(85, 149, 233, 1) 100%);
   border: none;
   color: var(--white);
   cursor: pointer;
@@ -115,6 +110,11 @@
   .projects__container img {
     width: 740px;
     height: 390px;
+  }
+
+  .projects img:hover {
+    transform: scale(1.015);
+    transition: all 400ms ease-in-out;
   }
 
   .projects__text {
