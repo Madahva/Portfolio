@@ -1,9 +1,12 @@
 import "../styles/ContactMe.css";
+import "../styles/EmailSentModal.css";
 import contactImage from "../images/contact.svg";
+import mailImage from "../images/mail_sent.svg";
 import { BiLinkExternal } from "react-icons/bi";
 import resume from "../images/resume.pdf";
 
 const ContactMe = () => {
+  var userName = " ";
   const activeName = () => {
     var inputNombre = document.getElementById("inputNombre");
     inputNombre.classList.add("contact__input--active");
@@ -40,16 +43,50 @@ const ContactMe = () => {
     });
   };
 
+  function handleSubmit() {
+    userName = document.querySelector("#nombre").value;
+    const form = document.querySelector("form");
+    form.addEventListener("submit", showContactModal);
+
+    async function showContactModal(e) {
+      e.preventDefault();
+      const form = new FormData(this);
+      const response = await fetch(this.action, {
+        method: this.method,
+        body: form,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+      if (response.ok) {
+        this.reset();
+        const modal = document.querySelector("#myModal");
+        modal.style.display = "block";
+      }
+    }
+
+    const modalTittleEn = document.querySelector(".modal-tittle--english");
+    modalTittleEn.textContent = `Thanks, ${userName}`;
+
+    const modalTittleEs = document.querySelector(".modal-tittle--spanish");
+    modalTittleEs.textContent = `Gracias, ${userName}`;
+  }
+
   return (
     <section className="contact" id="contact">
-      <div  className="contact__container">
-        <img src={contactImage} alt="imagen de telefono" draggable="false" />
+      <div className="contact__container">
+        <img
+          className="contact-image"
+          src={contactImage}
+          alt="imagen de telefono"
+          draggable="false"
+        />
         <div className="contact__formulario">
           <h2 className="english">Get in touch</h2>
           <p className="english">
             If you wanna get in touch, talk to me about a project collaboration
-            or just <i>say hi</i>, fill up the form below or feel free to contact me
-            via Linkedin.
+            or just <i>say hi</i>, fill up the form below or feel free to
+            contact me via Linkedin.
           </p>
 
           <h2 className="spanish">Contactame</h2>
@@ -79,17 +116,13 @@ const ContactMe = () => {
               </a>
             </div>
             <div className="contact__redsocial">
-              <a
-                className="presentation__link"
-                href={resume}
-                target="_blank"
-              >
+              <a className="presentation__link" href={resume} target="_blank">
                 Curriculum <BiLinkExternal />
               </a>
             </div>
           </div>
 
-          <form action="https://formspree.io/f/xknykwze" method="POST">
+          <form action="https://formspree.io/f/xvollnpr" method="POST">
             <div
               id="inputNombre"
               className="contact__input__container"
@@ -204,16 +237,40 @@ const ContactMe = () => {
               <input
                 className="contact__input__submit english"
                 type="submit"
+                onClick={handleSubmit}
                 value="Send Message"
               />
 
               <input
                 className="contact__input__submit spanish"
                 type="submit"
+                onClick={handleSubmit}
                 value="Enviar mensaje"
               />
             </div>
           </form>
+        </div>
+      </div>
+
+      <div id="myModal" className="modal">
+        <div className="modal-content">
+          <div className="english">
+            <h3 className="modal-tittle--english"></h3>
+            <img src={mailImage} alt="mail" />
+
+            <p>You message has been sent.</p>
+            <p>Expect a reply within the next 24hrs.</p>
+            <p>- Guillermo</p>
+          </div>
+
+          <div className="spanish">
+            <h3 className="modal-tittle--spanish"></h3>
+            <img src={mailImage} alt="mail" />
+
+            <p>Tu mensage se envió correctamente.</p>
+            <p>Espera una respuesta dentro de las siguientes 24hrs.</p>
+            <p>- Guillermo</p>
+          </div>
         </div>
       </div>
     </section>
