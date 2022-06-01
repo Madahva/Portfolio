@@ -53,6 +53,7 @@
   text-align: center;
   text-decoration: none;
   margin: 1rem 0;
+  padding: .3rem;
 }
 
 .presentation__link:hover {

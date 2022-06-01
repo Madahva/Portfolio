@@ -40,6 +40,7 @@
 
 .contact__redsocial__container a {
     margin: 0;
+    padding: .3rem;
 }
 
 form {
@@ -108,7 +109,8 @@ form {
 }
 
 .contact__input__submit {
-    background-color: #2A7AE4;
+    background: rgb(42, 122, 228);
+    background: linear-gradient(90deg, rgba(42, 122, 228, 1) 0%, rgba(85, 149, 233, 1) 100%);
     border: none;
     color: #ffffff;
     cursor: pointer;
@@ -118,7 +120,9 @@ form {
 }
 
 .contact__input__submit:hover {
-    background-color: #5595E9;
+    background-color: var(--hover);
+    transform: scale(1.1, 1.1);
+    transition: all 400ms ease;
 }
 
 @media(min-width: 1024px) {

@@ -1,6 +1,7 @@
 #toTopBtn {
     display: block;
-    background: var(--primary--color);
+    background: rgb(42, 122, 228);
+    background: linear-gradient(90deg, rgba(42, 122, 228, 1) 0%, rgba(85, 149, 233, 1) 100%);
     font-size: 20px;
     color: var(--second--color);
     cursor: pointer;
@@ -14,8 +15,10 @@
 }
 
 #toTopBtn:hover {
-    background: var(--hover);
-    
+    background-color: var(--hover);
+    transform: scale(1.1, 1.1);
+    transition: all 400ms ease;
+
 }
 
 #toTopBtn.active {
