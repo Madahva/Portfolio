@@ -41,6 +41,7 @@
 .education__para-link:hover {
   background: rgb(42, 122, 228);
   background: linear-gradient(90deg, rgba(42, 122, 228, 1) 0%, rgba(85, 149, 233, 1) 100%);
+  border-top-right-radius: .4rem;
   color: #fff;
 }
 

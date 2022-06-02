@@ -58,6 +58,7 @@
 
 .presentation__link:hover {
   background-color: var(--second--color);
+  border-top-right-radius: 1rem;
   border-bottom: 1px solid transparent;
   color: var(--black);
   transform: scale(1.2, 1.2);
