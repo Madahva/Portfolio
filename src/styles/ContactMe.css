@@ -108,6 +108,8 @@ form {
 .contact__input--active #asuntoLabel,
 .contact__input--active #mensajeLabel {
   color: #2A7AE4;
+  font-size: 13px;
+  transition: all 0.2s;
 }
 
 .contact__input--active {
