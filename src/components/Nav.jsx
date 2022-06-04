@@ -57,6 +57,7 @@ function Nav() {
             draggable="false"
             src={starsIcon}
             alt="Stars icon"
+            loading="lazy"
           ></img>
           <h2 className="nav__logo-text">Madhava</h2>
         </div>

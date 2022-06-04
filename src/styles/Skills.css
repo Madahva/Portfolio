@@ -1,10 +1,12 @@
 .skills {
-    padding: 4rem 0;
     background-color: var(--bg--color);
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 4rem 0;
 }
 
 .skills>h2 {
-    font-size: 22px;
+    font-size: clamp(22px, 3.2vw, 2rem);
     font-weight: bold;
     line-height: 26px;
     margin: 0 0 2rem 0;
@@ -13,15 +15,16 @@
 
 .skills>p {
     color: var(--black-para);
-    text-align: center;
+    font-size: clamp(1rem, 1.9vw, 1.2rem);
     line-height: 22px;
-    padding: 0 1rem 4rem 1rem;
     margin: 0;
+    padding: 0 1rem 4rem 1rem;
+    text-align: center;
 }
 
 .grid-container {
     display: grid;
-    gap: 16px;
+    gap: 1rem;
     grid-template-columns: repeat(2, 10rem);
     grid-template-rows: repeat(6, 7.5rem);
     justify-content: center;
@@ -33,6 +36,7 @@
     display: flex;
     flex-direction: column;
     justify-content: end;
+    min-width: 150px;
 }
 
 .grid-container h3 {
@@ -50,7 +54,6 @@
     width: 34px;
 }
 
-
 @media(min-width: 768px) {
     .grid-container {
         grid-template-columns: repeat(3, 10rem);
@@ -59,32 +62,14 @@
 }
 
 @media(min-width: 1024px) {
-    .skills>h2 {
-        font-size: 2rem;
-    }
-
-    .skills>p {
-        font-size: 1.2rem;
-    }
-
     .grid-container {
         grid-template-columns: repeat(6, 9rem);
         grid-template-rows: repeat(2, 7.5rem);
     }
-
 }
 
 @media(min-width: 1200px) {
-    .skills {
-        max-width: 1000px;
-        margin: 0 auto;
-    }
-    
     .grid-container {
         justify-content: space-between;
-    }
-
-    .grid-container div {
-        min-width: 150px;
     }
 }

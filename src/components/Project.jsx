@@ -2,7 +2,7 @@ const Project = (props) => {
   return (
     <div className="projects__container">
       <a target="_blank" href={props.demo}>
-        <img draggable="false" src={props.src} alt={props.alt} />
+        <img draggable="false" src={props.src} alt={props.alt} loading="lazy" />
       </a>
 
       <div className="projects__text english">
@@ -17,7 +17,7 @@ const Project = (props) => {
             Demo
           </a>
           <a className="projects__btn-demo" target="_blank" href={props.repo}>
-          Repository
+            Repository
           </a>
         </div>
       </div>
@@ -26,7 +26,7 @@ const Project = (props) => {
         <h3>{props.tittleEs}</h3>
         <p>{props.descriptionEs}</p>
         <div className="projects__btn-container">
-        <a
+          <a
             className="projects__btn-repocitorio"
             target="_blank"
             href={props.demo}
@@ -34,7 +34,7 @@ const Project = (props) => {
             Demo
           </a>
           <a className="projects__btn-demo" target="_blank" href={props.repo}>
-          Repositorio
+            Repositorio
           </a>
         </div>
       </div>

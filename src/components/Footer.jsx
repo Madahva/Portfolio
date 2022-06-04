@@ -4,7 +4,7 @@ import starsIcon from "../images/stars-icon.svg";
 const Footer = () => {
   return (
     <footer id="footer">
-      <img src={starsIcon} alt="Stars icon" draggable="false" />
+      <img src={starsIcon} alt="Stars icon" draggable="false" loading="lazy" />
 
       <p className="english">
         <span>Developed with React by</span> Guillermo Galarza.

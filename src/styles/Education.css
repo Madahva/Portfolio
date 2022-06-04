@@ -6,22 +6,22 @@
 
 .education__tittle {
   color: var(--black-para);
-  font-size: 22px;
+  font-size: clamp(22px, 3.2vw, 2rem);
   margin: 0;
   padding: 0 0 2rem 0;
   text-align: center;
 }
 
 .education__para {
-  font-size: 17px;
-  line-height: 22px;
+  font-size: clamp(1rem, 1.9vw, 1.2rem);
+  line-height: 25px;
   margin: 0 auto 2rem auto;
   max-width: 950px;
   text-align: justify;
 }
 
 .para-first {
-  font-size: 17px;
+  font-size: clamp(1rem, 1.9vw, 1.2rem);
   line-height: 22px;
   margin: 0 auto 1rem auto;
   text-align: justify;
@@ -80,7 +80,8 @@
 
 .education__certificate h3 {
   color: black;
-  font-size: 16px;
+  font-size: 17px;
+  font-size: clamp(18px, 1.9vw, 1.3rem);
   font-weight: 700;
   line-height: 19px;
   margin: 8px 0;
@@ -88,27 +89,20 @@
 
 .education__certificate p {
   color: var(--black-para);
-  font-size: 14px;
+  font-size: clamp(14px, 1.9vw, 1rem);
   font-weight: 500;
   line-height: 16px;
   margin: 0;
 }
 
 @media(min-width: 1024px) {
-
   .education {
     padding: 4rem 0;
   }
 
   .education__tittle {
-    font-size: 2rem;
     padding: 0;
     margin-bottom: 4rem;
-  }
-
-  .para-first,
-  .education__para {
-    font-size: 1.2rem;
   }
 
   .education__para {
@@ -116,35 +110,22 @@
   }
 
   .education__certificates-container {
-    display: flex;
     align-items: center;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    min-width: 950px;
     margin: 0 auto;
+    min-width: 950px;
   }
 
   .education__certificate div {
     min-width: 300px;
   }
-
-  .education__certificate h3 {
-    font-size: 1.2rem
-  }
-
-  .education__certificate p {
-    font-size: 1rem;
-  }
 }
 
 
 @media(min-width: 1200px) {
-
-  .education__para {
-    max-width: 1000px;
-  }
-
-  .para-first {
+  .para-first, .education__para {
     max-width: 1000px;
   }
 
@@ -156,5 +137,4 @@
   .education__certificate div {
     min-width: 315px;
   }
-
 }

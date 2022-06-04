@@ -16,17 +16,17 @@
 
 .presentation__title {
   font-family: var(--font-tittle);
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 4.5vw, 3rem);
   font-weight: 700;
-  line-height: 26px;
+  line-height: clamp(26px, 4.5vw, 61px);
   margin: 32px 0px 16px 0;
 }
 
 .presentation__paragraph {
   color: var(--black-para);
-  font-size: 1rem;
+  font-size: clamp(1rem, 1.9vw, 22px);
   font-weight: 400;
-  line-height: 22px;
+  line-height: clamp(22px, 3vw, 2.3rem);
   margin: 16px 0px;
 }
 
@@ -46,7 +46,7 @@
   border-bottom: 1px solid var(--primary--color);
   color: var(--black-para);
   display: flex;
-  font-size: 14px;
+  font-size: clamp(14px, 1.6vw, 1rem);
   font-weight: 700;
   gap: 2px;
   line-height: 16px;
@@ -66,7 +66,6 @@
 }
 
 @media(min-width: 768px) {
-
   .presentation {
     flex-direction: row;
     justify-content: space-between;
@@ -81,7 +80,6 @@
 }
 
 @media(min-width: 1024px) {
-
   .presentation {
     padding-bottom: 4rem;
   }
@@ -90,18 +88,7 @@
     min-width: 604px;
   }
 
-  .presentation__title {
-    font-size: 3rem;
-    line-height: 61px;
-  }
-
-  .presentation__paragraph {
-    font-size: 22px;
-    line-height: 2.3rem;
-  }
-
   .presentation__link {
-    font-size: 1rem;
     margin-bottom: 0;
   }
 
@@ -112,7 +99,6 @@
 }
 
 @media(min-width: 1200px) {
-
   .presentation {
     max-width: 1000px;
     padding-inline: 0;

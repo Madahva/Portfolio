@@ -63,6 +63,7 @@ const AboutMe = () => {
           src={firma}
           draggable="false"
           alt="imagen de firma"
+          loading="lazy"
         />
       </div>
     </section>

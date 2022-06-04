@@ -80,6 +80,7 @@ const ContactMe = () => {
           src={contactImage}
           alt="imagen de telefono"
           draggable="false"
+          loading="lazy"
         />
         <div className="contact__formulario">
           <h2 className="english">Get in touch</h2>

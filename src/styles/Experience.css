@@ -9,7 +9,7 @@
 }
 
 .projects h2 {
-  font-size: 22px;
+  font-size: clamp(22px, 3.2vw, 2rem);
   font-weight: 700;
   margin: 0 0 2rem 0;
   text-align: center;
@@ -17,6 +17,7 @@
 
 .projects p {
   color: var(--black-para);
+  font-size: clamp(1rem, 1.9vw, 1.2rem);
   line-height: 22px;
   margin: 0 0 4rem 0;
   text-align: center;
@@ -38,15 +39,15 @@
 
 .projects__text h3 {
   color: var(--black-para);
-  font-size: 18px;
+  font-size: clamp(18px, 1.9vw, 1.4rem);
   font-weight: 700;
-  line-height: 19px;
+  line-height: clamp(19px, 3vw, 22px);
   margin: 1rem 0 0 0;
 }
 
 .projects__text p {
   color: var(--black-para);
-  font-size: 14px;
+  font-size: clamp(14px, 1.9vw, 1.2rem);
   font-weight: 500;
   text-align: start;
   margin: .5rem 0 1rem 0;
@@ -70,8 +71,8 @@
 }
 
 .projects__btn-demo {
-  background: rgb(42, 122, 228);
   background: linear-gradient(90deg, rgba(42, 122, 228, 1) 0%, rgba(85, 149, 233, 1) 100%);
+  background: rgb(42, 122, 228);
   border: none;
   color: var(--white);
   cursor: pointer;
@@ -92,14 +93,6 @@
     padding: 4rem 2rem;
   }
 
-  .projects h2 {
-    font-size: 2rem;
-  }
-
-  .projects p {
-    font-size: 1.2rem;
-  }
-
   .projects__container {
     align-items: center;
     display: flex;
@@ -108,8 +101,8 @@
   }
 
   .projects__container img {
-    width: 740px;
     height: 390px;
+    width: 740px;
   }
 
   .projects img:hover {
@@ -121,36 +114,29 @@
     margin: 0;
   }
 
-  .projects__text h3 {
-    font-size: 1.4rem;
-    line-height: 22px;
-  }
-
   .projects__text p {
-    font-size: 1rem;
     margin: .8rem 0;
   }
 
   .projects__btn-container {
-    display: flex;
     align-items: center;
-    justify-content: flex-start;
+    display: flex;
     gap: 1rem;
+    justify-content: flex-start;
   }
 
   .projects__btn-repocitorio {
-    padding: 0.79rem 1rem;
-
     height: fit-content;
     margin: 0;
     min-width: fit-content;
+    padding: 0.79rem 1rem;
   }
 
   .projects__btn-demo {
-    padding: 0.8rem 1rem;
     height: fit-content;
     margin: 0;
     min-width: fit-content;
+    padding: 0.8rem 1rem;
   }
 
   .toTurn a {
@@ -159,20 +145,17 @@
 }
 
 @media(min-width: 1200px) {
-
   .projects {
-    padding-inline: 0;
     max-width: 1000px;
+    padding-inline: 0;
   }
 
   .projects img {
     max-width: 1000px;
-
   }
 
   .projects__container {
-    min-width: 1000px;
     justify-content: space-between;
+    min-width: 1000px;
   }
-
 }
