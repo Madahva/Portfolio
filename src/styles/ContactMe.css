@@ -118,7 +118,6 @@ form {
 
 .contact__input__submit {
   background: linear-gradient(90deg, rgba(42, 122, 228, 1) 0%, rgba(85, 149, 233, 1) 100%);
-  background: rgb(42, 122, 228);
   border: none;
   color: #ffffff;
   cursor: pointer;

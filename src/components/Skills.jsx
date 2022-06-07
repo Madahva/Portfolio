@@ -1,6 +1,6 @@
 import Technology from "./Technology.jsx";
 import "../styles/Skills.css";
-import html from "../images/skills/HTML5_Logo.svg";
+import next from "../images/skills/next_Logo.svg";
 import css from "../images/skills/CSS_Logo.svg";
 import javaScript from "../images/skills/JavaScript_Logo.svg";
 import react from "../images/skills/React_Logo.svg";
@@ -55,17 +55,10 @@ const Skills = () => {
         />
 
         <Technology
-          className="grid-item-8"
-          url={mySQL}
-          alt="MySQL logo"
-          name="MySQL"
-        />
-
-        <Technology
-          className="grid-item-6"
-          url={java}
-          alt="Java logo"
-          name="Java"
+          className="grid-item-11"
+          url={next}
+          alt="Next logo"
+          name="Next.js"
         />
 
         <Technology
@@ -73,6 +66,13 @@ const Skills = () => {
           url={graphQL}
           alt="GraphQL logo"
           name="GraphQL"
+        />
+        
+        <Technology
+          className="grid-item-6"
+          url={java}
+          alt="Java logo"
+          name="Java"
         />
 
         <Technology
@@ -90,17 +90,17 @@ const Skills = () => {
         />
 
         <Technology
+          className="grid-item-8"
+          url={mySQL}
+          alt="MySQL logo"
+          name="MySQL"
+        />
+
+        <Technology
           className="grid-item-10"
           url={css}
           alt="CSS logo"
           name="CSS3"
-        />
-
-        <Technology
-          className="grid-item-11"
-          url={html}
-          alt="HTML5 logo"
-          name="HTML5"
         />
 
         <Technology
