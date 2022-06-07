@@ -40,6 +40,7 @@ const Skills = () => {
           alt="TypeScript logo"
           name="TypeScript"
         />
+
         <Technology
           className="grid-item-2"
           url={react}
@@ -62,17 +63,17 @@ const Skills = () => {
         />
 
         <Technology
+          className="grid-item-9"
+          url={git}
+          alt="Git logo"
+          name="Git"
+        />
+
+        <Technology
           className="grid-item-7"
           url={graphQL}
           alt="GraphQL logo"
           name="GraphQL"
-        />
-        
-        <Technology
-          className="grid-item-6"
-          url={java}
-          alt="Java logo"
-          name="Java"
         />
 
         <Technology
@@ -83,12 +84,12 @@ const Skills = () => {
         />
 
         <Technology
-          className="grid-item-9"
-          url={git}
-          alt="Git logo"
-          name="Git"
+          className="grid-item-6"
+          url={java}
+          alt="Java logo"
+          name="Java"
         />
-
+        
         <Technology
           className="grid-item-8"
           url={mySQL}
