@@ -5,6 +5,10 @@
     padding: 4rem 0;
 }
 
+.skills a {
+    text-decoration: none;
+}
+
 .skills>h2 {
     font-size: clamp(22px, 3.2vw, 2rem);
     font-weight: bold;
@@ -52,6 +56,56 @@
     height: 47px;
     margin: 0 16px;
     width: 34px;
+}
+
+.grid-container div {
+    height: 120px;
+    width: 150px;
+}
+
+.grid-item-1 img:last-of-type,
+.grid-item-2 img:last-of-type,
+.grid-item-3 img:last-of-type,
+.grid-item-4 img:last-of-type,
+.grid-item-5 img:last-of-type,
+.grid-item-6 img:last-of-type,
+.grid-item-7 img:last-of-type,
+.grid-item-8 img:last-of-type,
+.grid-item-9 img:last-of-type,
+.grid-item-10 img:last-of-type,
+.grid-item-11 img:last-of-type,
+.grid-item-12 img:last-of-type {
+    display: none;
+}
+
+.grid-item-1:hover img:first-of-type,
+.grid-item-2:hover img:first-of-type,
+.grid-item-3:hover img:first-of-type,
+.grid-item-4:hover img:first-of-type,
+.grid-item-5:hover img:first-of-type,
+.grid-item-6:hover img:first-of-type,
+.grid-item-7:hover img:first-of-type,
+.grid-item-8:hover img:first-of-type,
+.grid-item-9:hover img:first-of-type,
+.grid-item-10:hover img:first-of-type,
+.grid-item-11:hover img:first-of-type,
+.grid-item-12:hover img:first-of-type {
+    display: none;
+}
+
+.grid-item-1:hover img:last-of-type,
+.grid-item-2:hover img:last-of-type,
+.grid-item-3:hover img:last-of-type,
+.grid-item-4:hover img:last-of-type,
+.grid-item-5:hover img:last-of-type,
+.grid-item-6:hover img:last-of-type,
+.grid-item-7:hover img:last-of-type,
+.grid-item-8:hover img:last-of-type,
+.grid-item-9:hover img:last-of-type,
+.grid-item-10:hover img:last-of-type,
+.grid-item-11:hover img:last-of-type,
+.grid-item-12:hover img:last-of-type {
+    display: block;
 }
 
 @media(min-width: 768px) {
