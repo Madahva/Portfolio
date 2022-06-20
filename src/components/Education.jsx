@@ -1,9 +1,5 @@
 import "../styles/Education.css";
 import Certificate from "./Certificate.jsx";
-import aluraLogo from "../images/certificates/ONE_logo.webp";
-import frontEndCertificate from "../images/certificates/Certificado_FRONT-END.png";
-import businessAgilityCertificate from "../images/certificates/Certificado_BUSINESS AGILITY.png";
-import programmingCertificate from "../images/certificates/Certificado_PRINCIPIANTE EN PROGRAMACIÓN.png";
 
 const Education = () => {
   return (
@@ -48,26 +44,23 @@ const Education = () => {
       </p>
       <div className="education__certificates-container">
         <Certificate
-          href={frontEndCertificate}
-          src={aluraLogo}
+          href={"https://app.aluracursos.com/user/galarzaguillermo-ggm/degree-frontend-one-15423/certificate"}
           tittleEn="Front-End web developer"
           tittleEs="Desarrollador web Front-End"
           description="Oracle & Alura Latam"
         />
 
         <Certificate
-          href={businessAgilityCertificate}
-          src={aluraLogo}
+          href={"https://app.aluracursos.com/user/galarzaguillermo-ggm/degree-business-agility-one-15419/certificate"}
           tittleEn="Business Agility"
           tittleEs="Business Agility"
           description="Oracle & Alura Latam"
         />
 
         <Certificate
-          href={programmingCertificate}
-          src={aluraLogo}
-          tittleEn="Programming fundamentals"
-          tittleEs="Fundamentos de la programación"
+          href={"https://app.aluracursos.com/user/galarzaguillermo-ggm/degree-javaoo-one-15424/certificate"}
+          tittleEn="Back-end web developer"
+          tittleEs="Desarrollador web Back-end"
           description="Oracle & Alura Latam"
         />
       </div>
