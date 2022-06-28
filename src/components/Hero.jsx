@@ -1,5 +1,5 @@
 import "../styles/Hero.css";
-import profilePicture from "../images/profile picture.jpg";
+import profilePicture from "../images/guillermo__image.jpg";
 import resume from "../images/resume.pdf";
 import { BiLinkExternal } from "react-icons/bi";
 
