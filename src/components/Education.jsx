@@ -44,21 +44,21 @@ const Education = () => {
       </p>
       <div className="education__certificates-container">
         <Certificate
-          href={"https://app.aluracursos.com/user/galarzaguillermo-ggm/degree-frontend-one-15423/certificate"}
+          href={"https://app.aluracursos.com/degree/certificate/d3baf358-bd48-413e-869a-2fe05d5a7713"}
           tittleEn="Front-End web developer"
           tittleEs="Desarrollador web Front-End"
           description="Oracle & Alura Latam"
         />
 
         <Certificate
-          href={"https://app.aluracursos.com/user/galarzaguillermo-ggm/degree-business-agility-one-15419/certificate"}
+          href={"https://app.aluracursos.com/degree/certificate/c493f36d-6bfb-4a5e-9587-a99d124535fe"}
           tittleEn="Business Agility"
           tittleEs="Business Agility"
           description="Oracle & Alura Latam"
         />
 
         <Certificate
-          href={"https://app.aluracursos.com/user/galarzaguillermo-ggm/degree-javaoo-one-15424/certificate"}
+          href={"https://app.aluracursos.com/degree/certificate/17fea2ce-2b2e-4080-b26a-297d5f15efcb"}
           tittleEn="Back-end web developer"
           tittleEs="Desarrollador web Back-end"
           description="Oracle & Alura Latam"
