@@ -3,6 +3,7 @@ import Project from "./Project.jsx";
 import spaceTourism from "../images/projects/space_tourism.png";
 import faqAccordion from "../images/projects/FAQ__accordion.png";
 import proofSection from "../images/projects/proof__section.png";
+import bookmark from "../images/projects/bookmark__landing-page.png";
 
 const Experience = () => {
   return (
@@ -26,28 +27,45 @@ const Experience = () => {
       />
 
       <div className="toTurn">
+        <Project 
+          demo="https://madahva.github.io/Bookmark-landing-page/"
+          repo="https://github.com/Madahva/Bookmark-landing-page"
+          src={bookmark}
+          alt="Bookmark landing-page"
+          tittleEn="Bookmark landing-page"
+          descriptionEn="CSS and JavaScript"
+          tittleEs="Bookmark landing-page"
+          descriptionEs="CSS y JavaScript"
+        />
+
+      </div>
+
+
+      <Project
+        demo="https://6275e108762cc121b444ff54--symphonious-chaja-5fea6d.netlify.app/"
+        repo="https://github.com/Madahva/my-learning-area/tree/main/Practice/React/Social%20proof%20section%20-%20React"
+        src={proofSection}
+        alt="Proof section"
+        tittleEn="Social proof section"
+        descriptionEn="React and CSS"
+        tittleEs="Sección de validación social"
+        descriptionEs="CSS y React"
+      />
+
+      <div className="toTurn">
         <Project
-          demo="https://6275e108762cc121b444ff54--symphonious-chaja-5fea6d.netlify.app/"
-          repo="https://github.com/Madahva/my-learning-area/tree/main/Practice/React/Social%20proof%20section%20-%20React"
-          src={proofSection}
-          alt="Proof section"
-          tittleEn="Social proof section"
-          descriptionEn="React and CSS"
-          tittleEs="Sección de validación social"
-          descriptionEs="CSS y React"
+          demo="https://precious-centaur-867211.netlify.app/"
+          repo="https://github.com/Madahva/my-learning-area/tree/main/Practice/CSS/FAQ%20accordion%20card%20-%20CSS"
+          src={faqAccordion}
+          alt="FAQ Accordion card component image"
+          tittleEn="FAQ Accordion card component"
+          descriptionEn="CSS and JavaScript"
+          tittleEs="Página de FAQ en acordeón"
+          descriptionEs="CSS y JavaScript"
         />
       </div>
 
-      <Project
-        demo="https://precious-centaur-867211.netlify.app/"
-        repo="https://github.com/Madahva/my-learning-area/tree/main/Practice/CSS/FAQ%20accordion%20card%20-%20CSS"
-        src={faqAccordion}
-        alt="FAQ Accordion card component image"
-        tittleEn="FAQ Accordion card component"
-        descriptionEn="CSS and JavaScript"
-        tittleEs="Página de FAQ en acordeón"
-        descriptionEs="CSS y JavaScript"
-      />
+
 
 
     </section>
