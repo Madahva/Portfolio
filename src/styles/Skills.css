@@ -105,7 +105,13 @@
 .grid-item-10:hover img:last-of-type,
 .grid-item-11:hover img:last-of-type,
 .grid-item-12:hover img:last-of-type {
+    animation: toShow ease-in .75s;
     display: block;
+}
+
+@keyframes toShow {
+    0% {opacity: .5;}
+    100% {opacity: 1;}
 }
 
 @media(min-width: 768px) {
