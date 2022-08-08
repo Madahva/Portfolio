@@ -4,6 +4,7 @@ import spaceTourism from "../images/projects/space_tourism.png";
 import faqAccordion from "../images/projects/FAQ__accordion.png";
 import proofSection from "../images/projects/proof__section.png";
 import bookmark from "../images/projects/bookmark__landing-page.png";
+import grover from "../images/projects/grover__landing-page.png";
 
 const Experience = () => {
   return (
@@ -40,19 +41,31 @@ const Experience = () => {
 
       </div>
 
-
       <Project
-        demo="https://6275e108762cc121b444ff54--symphonious-chaja-5fea6d.netlify.app/"
-        repo="https://github.com/Madahva/my-learning-area/tree/main/Practice/React/Social%20proof%20section%20-%20React"
-        src={proofSection}
-        alt="Proof section"
-        tittleEn="Social proof section"
-        descriptionEn="React and CSS"
-        tittleEs="Sección de validación social"
-        descriptionEs="CSS y React"
-      />
+            demo="https://darling-pixie-9ff28f.netlify.app/"
+            repo="https://github.com/Madahva/Grover--Landing-page"
+            src={grover}
+            alt="Grover - Landing page"
+            tittleEn="Grover - Landing page"
+            descriptionEn="Javascript and CSS"
+            tittleEs="Grover - Landing page"
+            descriptionEs="CSS y Javascript"
+          />
 
       <div className="toTurn">
+        <Project
+          demo="https://6275e108762cc121b444ff54--symphonious-chaja-5fea6d.netlify.app/"
+          repo="https://github.com/Madahva/my-learning-area/tree/main/Practice/React/Social%20proof%20section%20-%20React"
+          src={proofSection}
+          alt="Proof section"
+          tittleEn="Social proof section"
+          descriptionEn="React and CSS"
+          tittleEs="Sección de validación social"
+          descriptionEs="CSS y React"
+        />
+      </div>
+
+    {/*   <div className="toTurn">
         <Project
           demo="https://precious-centaur-867211.netlify.app/"
           repo="https://github.com/Madahva/my-learning-area/tree/main/Practice/CSS/FAQ%20accordion%20card%20-%20CSS"
@@ -63,10 +76,7 @@ const Experience = () => {
           tittleEs="Página de FAQ en acordeón"
           descriptionEs="CSS y JavaScript"
         />
-      </div>
-
-
-
+      </div> */}
 
     </section>
   );
