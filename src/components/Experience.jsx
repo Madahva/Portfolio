@@ -5,6 +5,7 @@ import faqAccordion from "../images/projects/FAQ__accordion.png";
 import proofSection from "../images/projects/proof__section.png";
 import bookmark from "../images/projects/bookmark__landing-page.png";
 import grover from "../images/projects/grover__landing-page.png";
+import easybank from "../images/projects/easybank__landing-page.png";
 
 const Experience = () => {
   return (
@@ -28,31 +29,44 @@ const Experience = () => {
       />
 
       <div className="toTurn">
-        <Project 
-          demo="https://madahva.github.io/Bookmark-landing-page/"
-          repo="https://github.com/Madahva/Bookmark-landing-page"
-          src={bookmark}
-          alt="Bookmark landing-page"
-          tittleEn="Bookmark landing-page"
-          descriptionEn="CSS and JavaScript"
-          tittleEs="Bookmark landing-page"
-          descriptionEs="CSS y JavaScript"
+        <Project
+          demo="https://darling-pixie-9ff28f.netlify.app/"
+          repo="https://github.com/Madahva/Grover--Landing-page"
+          src={grover}
+          alt="Grover - Landing page"
+          tittleEn="Grover - Landing page"
+          descriptionEn="Javascript and CSS"
+          tittleEs="Grover - Landing page"
+          descriptionEs="CSS y Javascript"
         />
-
       </div>
 
       <Project
-            demo="https://darling-pixie-9ff28f.netlify.app/"
-            repo="https://github.com/Madahva/Grover--Landing-page"
-            src={grover}
-            alt="Grover - Landing page"
-            tittleEn="Grover - Landing page"
-            descriptionEn="Javascript and CSS"
-            tittleEs="Grover - Landing page"
-            descriptionEs="CSS y Javascript"
-          />
+        demo="https://madahva.github.io/Bookmark-landing-page/"
+        repo="https://github.com/Madahva/Bookmark-landing-page"
+        src={bookmark}
+        alt="Bookmark landing-page"
+        tittleEn="Bookmark landing-page"
+        descriptionEn="JavaScript and CSS"
+        tittleEs="Bookmark landing-page"
+        descriptionEs="JavaScript y CSS"
+      />
 
       <div className="toTurn">
+        <Project
+          demo="https://madahva.github.io/Easybank--Landing-page/"
+          repo="https://github.com/Madahva/Easybank--Landing-page"
+          src={easybank}
+          alt="Easybank landing-page"
+          tittleEn="Easybank landing-page"
+          descriptionEn="JavaScript and CSS"
+          tittleEs="Easybank landing-page"
+          descriptionEs="JavaScript y CSS"
+        />
+      </div>
+
+
+      {/*    <div className="toTurn">
         <Project
           demo="https://6275e108762cc121b444ff54--symphonious-chaja-5fea6d.netlify.app/"
           repo="https://github.com/Madahva/my-learning-area/tree/main/Practice/React/Social%20proof%20section%20-%20React"
@@ -63,9 +77,9 @@ const Experience = () => {
           tittleEs="Sección de validación social"
           descriptionEs="CSS y React"
         />
-      </div>
+      </div> */}
 
-    {/*   <div className="toTurn">
+      {/*   <div className="toTurn">
         <Project
           demo="https://precious-centaur-867211.netlify.app/"
           repo="https://github.com/Madahva/my-learning-area/tree/main/Practice/CSS/FAQ%20accordion%20card%20-%20CSS"
