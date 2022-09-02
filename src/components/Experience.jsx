@@ -1,5 +1,6 @@
 import "../styles/Experience.css";
 import Project from "./Project.jsx";
+import ShowMoreButton from "./ShowMoreButton.jsx";
 import spaceTourism from "../images/projects/space_tourism.png";
 import faqAccordion from "../images/projects/FAQ__accordion.png";
 import proofSection from "../images/projects/proof__section.png";
@@ -65,6 +66,7 @@ const Experience = () => {
         />
       </div>
 
+    <ShowMoreButton />
 
       {/*    <div className="toTurn">
         <Project

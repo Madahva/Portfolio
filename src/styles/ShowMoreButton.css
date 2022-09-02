@@ -1,0 +1,16 @@
+.show-more-btn {
+  background: linear-gradient(90deg, rgba(42, 122, 228, 1) 0%, rgba(85, 149, 233, 1) 100%);
+  border: none;
+  color: var(--white);
+  cursor: pointer;
+  margin: 0 0 3rem 0;
+  padding: .8rem 2rem;
+  text-decoration: none;
+  transition: all 300ms ease;
+}
+
+.show-more-btn:hover { 
+  background-color: var(--hover);
+  transform: scale(1.1, 1.1);
+  transition: all 400ms ease;
+}
