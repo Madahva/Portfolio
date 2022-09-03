@@ -14,7 +14,7 @@
 
 .education__para {
   font-size: clamp(1rem, 1.9vw, 1.2rem);
-  line-height: 25px;
+  line-height: 30px;
   margin: 0 auto 2rem auto;
   max-width: 950px;
   text-align: justify;
@@ -83,7 +83,7 @@
   font-size: clamp(18px, 1.9vw, 1.2rem);
   font-weight: 600;
   line-height: 19px;
-  margin: 8px 0;
+  margin: 1rem 0 .5rem 0;
 }
 
 .education__certificate p {
