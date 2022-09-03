@@ -1,6 +1,5 @@
 import "../styles/Experience.css";
 import Project from "./Project.jsx";
-import ShowMoreButton from "./ShowMoreButton.jsx";
 import spaceTourism from "../images/projects/space_tourism.png";
 import faqAccordion from "../images/projects/FAQ__accordion.png";
 import proofSection from "../images/projects/proof__section.png";
@@ -38,7 +37,7 @@ const Experience = () => {
           tittleEn="Grover - Landing page"
           descriptionEn="Javascript and CSS"
           tittleEs="Grover - Landing page"
-          descriptionEs="CSS y Javascript"
+          descriptionEs="Javascript y CSS"
         />
       </div>
 
@@ -66,33 +65,29 @@ const Experience = () => {
         />
       </div>
 
-    <ShowMoreButton />
+      <Project
+        demo="https://6275e108762cc121b444ff54--symphonious-chaja-5fea6d.netlify.app/"
+        repo="https://github.com/Madahva/my-learning-area/tree/main/Practice/React/Social%20proof%20section%20-%20React"
+        src={proofSection}
+        alt="Proof section"
+        tittleEn="Social proof section"
+        descriptionEn="React and CSS"
+        tittleEs="Sección de validación social"
+        descriptionEs="React y CSS"
+      />
 
-      {/*    <div className="toTurn">
-        <Project
-          demo="https://6275e108762cc121b444ff54--symphonious-chaja-5fea6d.netlify.app/"
-          repo="https://github.com/Madahva/my-learning-area/tree/main/Practice/React/Social%20proof%20section%20-%20React"
-          src={proofSection}
-          alt="Proof section"
-          tittleEn="Social proof section"
-          descriptionEn="React and CSS"
-          tittleEs="Sección de validación social"
-          descriptionEs="CSS y React"
-        />
-      </div> */}
-
-      {/*   <div className="toTurn">
+      <div className="toTurn">
         <Project
           demo="https://precious-centaur-867211.netlify.app/"
           repo="https://github.com/Madahva/my-learning-area/tree/main/Practice/CSS/FAQ%20accordion%20card%20-%20CSS"
           src={faqAccordion}
           alt="FAQ Accordion card component image"
           tittleEn="FAQ Accordion card component"
-          descriptionEn="CSS and JavaScript"
+          descriptionEn="JavaScript and CSS"
           tittleEs="Página de FAQ en acordeón"
-          descriptionEs="CSS y JavaScript"
+          descriptionEs="JavaScript y CSS "
         />
-      </div> */}
+      </div>
 
     </section>
   );
