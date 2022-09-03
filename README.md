@@ -2,4 +2,4 @@
 
 You can see my portfolio here: https://madhava.netlify.app/
 
-![madhava netlify app_](https://user-images.githubusercontent.com/89199369/183479502-712ea0ce-a897-46af-b555-d63a87ef2c99.png)
+![madhava netlify app_ (2)](https://user-images.githubusercontent.com/89199369/188271498-8ba0fdf6-afbc-4026-98cc-575e98991764.png)
