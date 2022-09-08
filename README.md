@@ -4,7 +4,7 @@ A selection of projects I've worked on.
 
 ## Built with
 - React
-- JSX
+- 
 - Semantic HTML5 markup
 - CSS Flexbox
 - Mobile-first workflow
