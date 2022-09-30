@@ -18,7 +18,7 @@ const Experience = () => {
       </p>
 
       <Project
-        demo="https://madahva.github.io/space-tourism-website/"
+        demo="https://madahva.github.io/Space-tourism--Website/"
         repo="https://github.com/Madahva/space-tourism-website"
         src={spaceTourism}
         alt="Space tourism multi-page website"
@@ -42,7 +42,7 @@ const Experience = () => {
       </div>
 
       <Project
-        demo="https://madahva.github.io/Bookmark-landing-page/"
+        demo="https://madahva.github.io/Bookmark--Landing-page/"
         repo="https://github.com/Madahva/Bookmark-landing-page"
         src={bookmark}
         alt="Bookmark landing-page"
