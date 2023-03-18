@@ -9,8 +9,19 @@ const AboutMe = () => {
           <h2 className="about__title">About me</h2>
 
           <p className="about__paragraph">
-            I'm a <strong><span>Full-stack</span></strong> web developer focused on
-            <strong><span> Front-end</span></strong>.
+            I'm a{" "}
+            <strong>
+              <span>Full-stack</span>
+            </strong>{" "}
+            web developer with a strong foundation in both{" "}
+            <strong>
+              <span> Front-end</span>
+            </strong>{" "}
+            and{" "}
+            <strong>
+              <span> Back-end</span>
+            </strong>{" "}
+            technologies.
           </p>
 
           <p className="about__paragraph">
@@ -36,8 +47,19 @@ const AboutMe = () => {
           <h2 className="about__title">Sobre mí</h2>
 
           <p className="about__paragraph">
-            Soy un desarrollador web <strong><span>Full-stack</span></strong> centrado en el
-            <strong><span> Front-end</span></strong>.
+            Soy un desarrollador web{" "}
+            <strong>
+              <span>Full-stack</span>
+            </strong>{" "}
+            con una sólida base en tecnologías tanto de
+            <strong>
+              <span> Front-end</span>
+            </strong>{" "}
+            como de{" "}
+            <strong>
+              <span>Back-end</span>
+            </strong>
+            .
           </p>
 
           <p className="about__paragraph">

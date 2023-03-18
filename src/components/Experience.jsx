@@ -6,6 +6,8 @@ import proofSection from "../images/projects/proof__section.png";
 import bookmark from "../images/projects/bookmark__landing-page.png";
 import grover from "../images/projects/grover__landing-page.png";
 import easybank from "../images/projects/easybank__landing-page.png";
+import pokedex from "../images/projects/pokedex.png";
+import ecommerce from "../images/projects/e-commerce.png";
 
 const Experience = () => {
   return (
@@ -66,26 +68,26 @@ const Experience = () => {
       </div>
 
       <Project
-        demo="https://6275e108762cc121b444ff54--symphonious-chaja-5fea6d.netlify.app/"
-        repo="https://github.com/Madahva/my-learning-area/tree/main/Practice/React/Social%20proof%20section%20-%20React"
-        src={proofSection}
-        alt="Proof section"
-        tittleEn="Social proof section"
-        descriptionEn="React and CSS"
-        tittleEs="Sección de validación social"
-        descriptionEs="React y CSS"
+        demo="https://pokedex-pi.netlify.app/"
+        repo="https://github.com/Madahva/Pokedex-SPA"
+        src={pokedex}
+        alt="Pokedex"
+        tittleEn="Pokedex | SPA"
+        descriptionEn="React, Express, PostgreSQL, etc"
+        tittleEs="Pokedex | SPA"
+        descriptionEs="React, Express, PostgreSQL, etc"
       />
 
       <div className="toTurn">
         <Project
-          demo="https://precious-centaur-867211.netlify.app/"
-          repo="https://github.com/Madahva/my-learning-area/tree/main/Practice/CSS/FAQ%20accordion%20card%20-%20CSS"
-          src={faqAccordion}
-          alt="FAQ Accordion card component image"
-          tittleEn="FAQ Accordion card component"
-          descriptionEn="JavaScript and CSS"
-          tittleEs="Página de FAQ en acordeón"
-          descriptionEs="JavaScript y CSS "
+          demo="https://ecommerce--pf.vercel.app/"
+          repo="https://github.com/Madahva/E-commerce--Front"
+          src={ecommerce}
+          alt="Full-stack E-commerce web-site"
+          tittleEn="E-commerce"
+          descriptionEn="TypeScript, React, PostgreSQL, etc"
+          tittleEs="E-commerce"
+          descriptionEs="TypeScript, React, PostgreSQL, etc"
         />
       </div>
 

@@ -1,5 +1,5 @@
 import "../styles/Hero.css";
-import profilePicture from "../images/guillermo__image.jpg";
+import profilePicture from "../images/Guillermo__image.png";
 import resume from "../images/resume.pdf";
 import { BiLinkExternal } from "react-icons/bi";
 
@@ -20,7 +20,7 @@ const Hero = () => {
             I am a web developer, with a lot of will to learn and improve.
           </p>
           <p className="presentation__paragraph">
-            My favorite technologies are <strong><span>CSS, JavaScript and React.</span></strong>
+            My favorite technologies are <strong><span>TypeScript, React and CSS.</span></strong>
           </p>
         </div>
 
@@ -29,7 +29,7 @@ const Hero = () => {
             Soy un desarrollador web con mucha predisposición para aprender y mejorar.
           </p>
           <p className="presentation__paragraph">
-            Mis tecnologías favoritas son <strong><span>CSS, JavaScript y React.</span></strong>
+            Mis tecnologías favoritas son <strong><span>TypeScript, React y css.</span></strong>
           </p>
         </div>
 
