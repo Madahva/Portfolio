@@ -14,4 +14,4 @@ A selection of projects I've worked on.
 
 ### 🔗 You can see my portfolio here: https://madhava.netlify.app/
 
-![madhava netlify app_ (2)](https://user-images.githubusercontent.com/89199369/188271498-8ba0fdf6-afbc-4026-98cc-575e98991764.png)
+![Screen Shot 2023-03-29 at 16 41 20](https://user-images.githubusercontent.com/89199369/228649857-ae451559-a066-4482-be36-8c6e054492c7.png)
