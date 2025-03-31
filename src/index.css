@@ -1,0 +1,23 @@
+@import "@fontsource/raleway";
+
+@import "tailwindcss";
+@theme {
+  --color-white: #e8e9ff;
+  --font-raleway: "Raleway", "sans-serif";
+}
+
+@layer base {
+  html {
+    margin: 0 auto;
+    max-width: 1800px;
+  }
+
+  body {
+    background: black;
+    color: var(--color-white);
+    font-family: var(--font-raleway);
+    min-height: 100vh;
+    position: relative;
+    margin: 0 2rem;
+  }
+}
