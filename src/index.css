@@ -3,6 +3,7 @@
 @import "tailwindcss";
 @theme {
   --color-white: #e8e9ff;
+  --color-text-secondary: #c5bdff;
   --font-raleway: "Raleway", "sans-serif";
 }
 

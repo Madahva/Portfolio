@@ -1,13 +1,11 @@
-import blur1 from "@/assets/blur--1.svg";
 import { Navbar } from "@/components/navbar/Navbar";
+import { Hero } from "@/components/hero/Hero";
 
 function App() {
   return (
     <>
-      {/*
-      <img src={blur1} className="absolute" alt="Vite logo" />
-      */}
       <Navbar />
+      <Hero />
     </>
   );
 }
