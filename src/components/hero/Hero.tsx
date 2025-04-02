@@ -1,13 +1,23 @@
+import { cn } from "@/lib/utils";
+
 import hero from "@/assets/hero.svg";
 import { SocialLinks } from "@/components/hero/ContactLinks";
 
 export const Hero = () => {
   return (
-    <section className="flex justify-between items-center my-20">
+    <section
+      className={cn(
+        "flex flex-col justify-between items-start my-20",
+        "lg:items-center lg:flex-row",
+      )}
+    >
       <div className="flex flex-col max-w-[600px] gap-8">
-        <h1 className="text-5xl leading-15 max-w-[500px]">
+        <h1 className="text-4xl lg:text-5xl leading-15 max-w-[500px]">
           Hello, I'm
-          <span className="font-extrabold"> Guillermo. Front-End Engineer</span>
+          <span className="font-extrabold">
+            {" "}
+            Guillermo. <br /> Front-End Engineer
+          </span>
         </h1>
         <div className="text-text-secondary text-lg flex flex-col gap-4">
           <p>
