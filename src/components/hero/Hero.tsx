@@ -8,11 +8,11 @@ export const Hero = () => {
     <section
       className={cn(
         "flex flex-col justify-between items-start my-20",
-        "lg:items-center lg:flex-row",
+        "lg:items-center md:flex-row",
       )}
     >
       <div className="flex flex-col max-w-[600px] gap-8">
-        <h1 className="text-4xl lg:text-5xl leading-15 max-w-[500px]">
+        <h1 className="text-4xl lg:text-5xl leading-11 max-w-[500px] lg:leading-15">
           Hello, I'm
           <span className="font-extrabold">
             {" "}
@@ -32,7 +32,11 @@ export const Hero = () => {
         </div>
         <SocialLinks />
       </div>
-      <img src={hero} alt="programmer image" />
+      <img
+        src={hero}
+        alt="programmer image"
+        className="max-w-[400px] lg:max-w-none"
+      />
     </section>
   );
 };
