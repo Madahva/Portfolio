@@ -26,14 +26,12 @@ export const HamburgerMenu = ({ handleClick }: props) => {
         />
         <span
           className="absolute w-full h-[1px] bg-white rounded transition-all duration-300 
-        origin-left top-0 
-        peer-checked:rotate-45 peer-checked:top-0"
+        origin-left top-0"
         />
-        <span className="absolute w-[90%] h-[1px] bg-white rounded top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 peer-checked:w-0" />
+        <span className="absolute w-[90%] h-[1px] bg-white rounded top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
         <span
           className="absolute w-full h-[1px] bg-white rounded transition-all duration-300 
-        origin-left bottom-0 
-        peer-checked:-rotate-45 peer-checked:top-full"
+        origin-left bottom-0"
         />
       </label>
     </button>
