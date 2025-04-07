@@ -7,7 +7,7 @@ export const Hero = () => {
   return (
     <section
       className={cn(
-        "flex flex-col justify-between items-center my-20",
+        "flex flex-col justify-between items-center",
         "md:flex-row",
       )}
     >
@@ -19,7 +19,7 @@ export const Hero = () => {
             Guillermo. <br /> Front-End Engineer
           </span>
         </h1>
-        <div className="text-text-secondary text-lg flex flex-col gap-4">
+        <div className="text-text-secondary text-base flex flex-col gap-4">
           <p>
             I build responsive, accessible web applications with exceptional
             performance metrics.
@@ -35,7 +35,7 @@ export const Hero = () => {
       <img
         src={hero}
         alt="programmer image"
-        className="max-w-[350px] lg:max-w-none"
+        className="max-w-[350px] lg:max-w-none lg:w-[550px]"
       />
     </section>
   );
