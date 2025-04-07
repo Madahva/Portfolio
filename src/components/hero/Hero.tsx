@@ -7,8 +7,8 @@ export const Hero = () => {
   return (
     <section
       className={cn(
-        "flex flex-col justify-between items-start my-20",
-        "lg:items-center md:flex-row",
+        "flex flex-col justify-between items-center my-20",
+        "md:flex-row",
       )}
     >
       <div className="flex flex-col max-w-[600px] gap-8">
@@ -35,7 +35,7 @@ export const Hero = () => {
       <img
         src={hero}
         alt="programmer image"
-        className="max-w-[400px] lg:max-w-none"
+        className="max-w-[350px] lg:max-w-none"
       />
     </section>
   );

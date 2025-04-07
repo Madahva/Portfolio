@@ -9,10 +9,6 @@ const SOCIALS = [
     name: "GitHub",
     link: "https://github.com/Madahva",
   },
-  {
-    name: "Gmail",
-    link: "mailto:galarzaguillermo.ggm@gmail.com",
-  },
 ];
 
 export const SocialLinks = () => {
@@ -23,7 +19,7 @@ export const SocialLinks = () => {
           key={social.name}
           href={social.link}
           className={cn(
-            "cursor-pointer border rounded py-2 px-4 font-bold",
+            "cursor-pointer border rounded py-2 px-4 font-bold flex-1",
             "transition duration-300",
             "hover:bg-white hover:text-black",
           )}
