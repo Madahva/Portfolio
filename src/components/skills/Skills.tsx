@@ -51,7 +51,7 @@ export const Skills = () => {
     <section className="md:py-20" id="skills">
       <div className="flex flex-col justify-center items-start mb-20 gap-4 lg:items-center">
         <h2 className="text-4xl">
-          My <span className="font-extrabold">Skills</span>
+          Tech <span className="font-extrabold">Stack</span>
         </h2>
         <p className="text-text-secondary">
           A list of my favorite tools and technologies that I use on a regular
