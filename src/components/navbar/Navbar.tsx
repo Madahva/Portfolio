@@ -15,7 +15,7 @@ export const Navbar = () => {
           )}
         >
           {Object.entries(NAV_ITEMS).map(([key, value]) => (
-            <li className="relative group">
+            <li className="relative group" key={key}>
               <a href={`#${key}`}>{value}</a>
               <span
                 className={cn(

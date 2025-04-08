@@ -11,6 +11,9 @@ importers:
       '@fontsource/raleway':
         specifier: ^5.2.5
         version: 5.2.5
+      '@fontsource/sora':
+        specifier: ^5.2.5
+        version: 5.2.5
       '@tailwindcss/vite':
         specifier: ^4.0.16
         version: 4.0.16(vite@6.2.3(@types/node@22.13.14)(jiti@2.4.2)(lightningcss@1.29.2))
@@ -342,6 +345,9 @@ packages:
 
   '@fontsource/raleway@5.2.5':
     resolution: {integrity: sha512-gVFV8Yi8Y5h8sQw0U/F6TQID53DVIWPuRxqBLOBxwLbQma42JAwqTZ+pi3eDjpm20/rjS2XoVJH5hnMx1KFB+g==}
+
+  '@fontsource/sora@5.2.5':
+    resolution: {integrity: sha512-tYBw4RHgNEhwOrsqSVlFKt4hdpf9/2taC+ygQJzw6wyPvQnnqJgYz+rGwuTOi3Wuv1qgoyyRpHkcKO7O8nSrEw==}
 
   '@humanfs/core@0.19.1':
     resolution: {integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==}
@@ -1507,6 +1513,8 @@ snapshots:
       levn: 0.4.1
 
   '@fontsource/raleway@5.2.5': {}
+
+  '@fontsource/sora@5.2.5': {}
 
   '@humanfs/core@0.19.1': {}
 

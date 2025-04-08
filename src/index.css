@@ -1,16 +1,18 @@
 @import "@fontsource/raleway";
+@import "@fontsource/sora";
 
 @import "tailwindcss";
 @theme {
   --color-white: #e8e9ff;
   --color-text-secondary: #c5bdff;
   --font-raleway: "Raleway", "sans-serif";
+  --font-sora: "Sora", "sans-serif";
 }
 
 @layer base {
   html {
     margin: 0 auto;
-    max-width: 1800px;
+    max-width: 1600px;
   }
 
   body {

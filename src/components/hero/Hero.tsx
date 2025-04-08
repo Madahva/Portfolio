@@ -7,8 +7,8 @@ export const Hero = () => {
   return (
     <section
       className={cn(
-        "flex flex-col justify-between items-center",
-        "md:flex-row",
+        "flex flex-col justify-between items-center py-20",
+        "md:flex-row lg:py-0",
       )}
     >
       <div className="flex flex-col max-w-[600px] gap-8">
