@@ -7,7 +7,7 @@ export const Hero = () => {
   return (
     <section
       className={cn(
-        "flex flex-col justify-between items-center py-20",
+        "flex flex-col justify-between items-center py-20 container",
         "md:flex-row lg:py-0",
       )}
     >

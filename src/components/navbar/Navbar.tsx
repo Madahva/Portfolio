@@ -6,7 +6,7 @@ import { MobileMenu } from "./MobileMenu";
 
 export const Navbar = () => {
   return (
-    <nav>
+    <nav className="container">
       <div className="py-8 justify-between items-center hidden lg:flex">
         <ul
           className={cn(

@@ -9,24 +9,26 @@
   --font-sora: "Sora", "sans-serif";
 }
 
-@layer base {
-  html {
-    margin: 0 auto;
-    max-width: 1600px;
-  }
-
-  body {
-    background: black;
-    color: var(--color-white);
-    font-family: var(--font-raleway);
-    min-height: 100vh;
-    position: relative;
-    margin: 0 2rem;
-  }
+@utility container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 2rem;
 
   @media (max-width: 640px) {
-    body {
-      margin: 0 1rem;
-    }
+    padding: 0 1rem;
+  }
+}
+
+@layer base {
+  body {
+    background: black;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 41, 255, 1) 100%
+    );
+    color: var(--color-white);
+    font-family: var(--font-raleway);
+    position: relative;
   }
 }

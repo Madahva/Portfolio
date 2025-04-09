@@ -25,7 +25,7 @@ export const MobileMenu = () => {
       {showMenu && (
         <ul
           className={cn(
-            "fixed inset-y-0 inset-x-4 bg-black h-full py-6",
+            "fixed inset-y-0 inset-x-0 px-4 bg-black h-full py-6",
             "flex flex-col justify-between items-left",
             "font-extrabold text-lg",
             "lg:hidden",
