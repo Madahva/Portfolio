@@ -35,20 +35,18 @@ const SKILLS = [
     icon: css,
     url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
   },
-  { name: "Tailwind CSS", icon: tailwind, url: "https://tailwindcss.com/" },
+  { name: "Tailwind", icon: tailwind, url: "https://tailwindcss.com/" },
   { name: "Figma", icon: figma, url: "https://www.figma.com/" },
   { name: "Jest", icon: jest, url: "https://jestjs.io/" },
   { name: "Git", icon: git, url: "https://git-scm.com/" },
   { name: "Vite", icon: vite, url: "https://vitejs.dev/" },
   { name: "Node.js", icon: node, url: "https://nodejs.org/" },
   { name: "Express", icon: express, url: "https://expressjs.com/" },
-  { name: "Sequelize", icon: sequelize, url: "https://sequelize.org/" },
-  { name: "PostgreSQL", icon: postgresql, url: "https://www.postgresql.org/" },
 ];
 
 export const Skills = () => {
   return (
-    <section className="md:py-20 container" id="skills">
+    <section className="md:my-48 container" id="skills">
       <div className="flex flex-col justify-center items-start mb-20 gap-4 lg:items-center">
         <h2 className="text-4xl">
           Tech <span className="font-extrabold">Stack</span>
@@ -66,13 +64,13 @@ export const Skills = () => {
             target="_blank"
             rel="noopener noreferrer"
             className={cn(
-              "bg-white p-4 w-40 h-40 rounded cursor-pointer",
-              "flex flex-col justify-around items-center gap-4",
+              "bg-white w-42 h-16 rounded cursor-pointer",
+              "flex justify-center items-center gap-4",
             )}
           >
             <img
               src={skill.icon}
-              className="w-14"
+              className="w-8"
               draggable="false"
               alt={skill.name}
             />
