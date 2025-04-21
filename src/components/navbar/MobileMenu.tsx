@@ -3,7 +3,7 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 import close from "@/assets/close.svg";
 import { HamburgerMenu } from "@/components/navbar/HamburgerMenu";
-import { NAV_ITEMS } from "@/components/navbar/NAV_ITEMS";
+import { NAV_ITEMS } from "@/data/navItems";
 import { Divider } from "@/components/navbar/Devider";
 import { ResumeLink } from "@/components/navbar/ResumeLink";
 

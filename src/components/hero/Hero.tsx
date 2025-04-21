@@ -19,7 +19,7 @@ export const Hero = () => {
             Guillermo. <br /> Front-End Engineer
           </span>
         </h1>
-        <div className="text-text-secondary text-base flex flex-col gap-4">
+        <div className="text flex flex-col gap-4">
           <p>
             I build responsive, accessible web applications with exceptional
             performance metrics.

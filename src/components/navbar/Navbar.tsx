@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { NAV_ITEMS } from "@/components/navbar/NAV_ITEMS";
+import { NAV_ITEMS } from "@/data/navItems";
 import { ResumeLink } from "@/components/navbar/ResumeLink";
 import { Divider } from "@/components/navbar/Devider";
 import { MobileMenu } from "./MobileMenu";
@@ -10,7 +10,7 @@ export const Navbar = () => {
       <div className="py-8 justify-between items-center hidden lg:flex">
         <ul
           className={cn(
-            "flex justify-between items-center w-100",
+            "flex items-center gap-8",
             "font-extrabold text-lg",
           )}
         >

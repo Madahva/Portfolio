@@ -1,15 +1,6 @@
 import { cn } from "@/lib/utils";
 
-const SOCIALS = [
-  {
-    name: "Linkedin",
-    link: "https://www.linkedin.com/in/guillermo-galarza/",
-  },
-  {
-    name: "GitHub",
-    link: "https://github.com/Madahva",
-  },
-];
+import { SOCIALS } from "@/data/socialLinks";
 
 export const SocialLinks = () => {
   return (

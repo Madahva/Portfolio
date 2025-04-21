@@ -19,6 +19,12 @@
   }
 }
 
+@utility text {
+  color: var(--color-text-secondary);
+  font-family: var(--font-sora);
+  line-height: 1.8rem;
+}
+
 @layer base {
   body {
     background: black;
