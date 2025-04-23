@@ -9,7 +9,7 @@ export const EXPERIENCE = [
     duration: "2022 - 2025",
     logo: libertun,
     description:
-      "Libertum is a real estate NFT marketplace that lets users invest in tokenized property through blockchain technology. I led the development of a full-stack MVP and ICO platform, which helped attract investor funding.I built responsive UIs with React and Next.js, and integrated Ethereum smart contracts using Ethers.js.",
+      "Libertum is a platform for tokenizing, creating, trading, and managing digital assets. From physical assets to financial securities, it simplifies the tokenization of real-world value and unlocks new liquidity opportunities through blockchain technology.",
   },
   {
     name: "Envwise",
@@ -17,7 +17,7 @@ export const EXPERIENCE = [
     duration: "2020 - 2022",
     logo: envwise,
     description:
-      "Envwise is a cleantech platform that uses AI and blockchain to drive sustainable innovation in real estate. As part of the development team, I helped build AI-powered systems to reduce emissions in existing buildings and contributed to an educational platform promoting eco-friendly practices among property owners. Worked with React, Next.js, Node.js, Express.js, and Solidity.",
+      "Envwise is a cleantech platform that leverages AI and blockchain to drive sustainability in real estate. It helps reduce emissions in existing buildings through intelligent systems, while also offering educational tools that promote eco-friendly practices among property owners.",
   },
   {
     name: "Henry",

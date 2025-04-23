@@ -6,8 +6,8 @@ export const Experience = () => {
   return (
     <section
       className={cn(
-        "bg-black mt-32 py-32 h-[1000px]",
-        "flex flex-col justify-between gap-20 px-4",
+        "bg-black mt-20 py-32",
+        "flex flex-col justify-between gap-32 px-4",
         "md:px-8 lg:items-center",
       )}
       id="experience"
