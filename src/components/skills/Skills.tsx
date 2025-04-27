@@ -4,7 +4,7 @@ import { SKILLS } from "@/data/techStack";
 
 export const Skills = () => {
   return (
-    <section className="md:my-48 container" id="skills">
+    <section className="md:py-48 container" id="skills">
       <div className="flex flex-col justify-center items-start mb-20 gap-4 lg:items-center">
         <h2 className="text-4xl">
           Tech <span className="font-extrabold">Stack</span>

@@ -10,6 +10,7 @@ export const Hero = () => {
         "flex flex-col justify-between items-center py-20 container",
         "md:flex-row lg:py-0",
       )}
+      id="about"
     >
       <div className="flex flex-col max-w-[600px] gap-8">
         <h1 className="text-4xl lg:text-5xl leading-11 max-w-[500px] lg:leading-15">
