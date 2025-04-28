@@ -1,8 +1,9 @@
 import { cn } from "@/lib/utils";
 import { NAV_ITEMS } from "@/data/navItems";
+
 import { ResumeLink } from "@/components/navbar/ResumeLink";
 import { Divider } from "@/components/navbar/Devider";
-import { MobileMenu } from "./MobileMenu";
+import { MobileMenu } from "@/components/navbar/MobileMenu";
 
 export const Navbar = () => {
   return (
@@ -17,9 +18,15 @@ export const Navbar = () => {
           <ul
             className={cn("flex items-center gap-8", "font-extrabold text-lg")}
           >
-            {Object.entries(NAV_ITEMS).map(([key, value]) => (
-              <li className="relative group" key={key}>
-                <a href={`#${key}`}>{value}</a>
+            {NAV_ITEMS.map((link) => (
+              <li className="relative group" key={link.name}>
+                <a
+                  href={`${link.href}`}
+                  target={link.target}
+                  rel="noopener noreferrer"
+                >
+                  {link.name}
+                </a>
                 <span
                   className={cn(
                     "bg-gradient-to-r from-cyan-500 to-blue-500",
