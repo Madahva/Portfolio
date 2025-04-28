@@ -42,14 +42,16 @@ export const MobileMenu = () => {
             <Divider className="top-[78px]" />
 
             <div className="max-h-[500px]">
-              {Object.entries(NAV_ITEMS).map(([key, value]) => (
-                <li className="relative group py-4">
+              {NAV_ITEMS.map((link) => (
+                <li className="relative group py-4" key={link.name}>
                   <a
-                    href={`#${key}`}
                     onClick={toggleMenu}
                     className="block w-full"
+                    href={`${link.href}`}
+                    target={link.target}
+                    rel="noopener noreferrer"
                   >
-                    {value}
+                    {link.name}
                   </a>
                   <span
                     className={cn(
