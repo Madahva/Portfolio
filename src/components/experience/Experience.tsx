@@ -1,12 +1,13 @@
 import { cn } from "@/lib/utils";
 
 import { EXPERIENCE } from "@/data/experience";
+import { Particles } from "@/components/animetedBackgrounds/Particles";
 
 export const Experience = () => {
   return (
     <section
       className={cn(
-        "bg-black mt-20 py-32",
+        "bg-black mt-20 py-32 relative",
         "flex flex-col justify-between gap-32 px-4",
         "md:px-8 lg:items-center",
       )}
@@ -38,6 +39,15 @@ export const Experience = () => {
           <p className="text">{exp.description}</p>
         </div>
       ))}
+      <Particles
+        className="absolute inset-0 z-0"
+        quantity={100}
+        color="#5700ff"
+        size={1.5}
+        refresh
+        vx={0.2}
+        vy={-0.5}
+      />
     </section>
   );
 };

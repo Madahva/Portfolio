@@ -10,8 +10,8 @@ export const ResumeLink = () => {
           "flex items-center justify-center gap-2",
           "py-2 px-4 font-extrabold text-base",
           "bg-black text-white rounded",
-          "transition-colors duration-300",
-          "hover:bg-transparent",
+          "transition-all duration-300",
+          "hover:shadow-[0_0_115px_rgba(0,184,219,1)]",
         )}
         href={resume}
         target="_blank"

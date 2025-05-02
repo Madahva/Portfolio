@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { AuroraText } from "@/components/hero/AuroraText";
 
 import hero from "@/assets/hero/hero.svg";
 import { SocialLinks } from "@/components/hero/ContactLinks";
@@ -17,7 +18,8 @@ export const Hero = () => {
           Hello, I'm
           <span className="font-extrabold">
             {" "}
-            Guillermo. <br /> Front-End Engineer
+            Guillermo. <br />
+            <AuroraText>Front-End Engineer</AuroraText>
           </span>
         </h1>
         <div className="text flex flex-col gap-4">

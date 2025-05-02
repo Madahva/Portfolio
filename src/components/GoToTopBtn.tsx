@@ -49,8 +49,10 @@ export const ScrollToTopButton = () => {
         "bg-gradient-to-r from-cyan to-blue",
         "cursor-pointer rounded p-0.5",
         "fixed bottom-4 right-4 lg:bottom-8 lg:right-8",
-        "transition-opacity duration-300",
+        "transition-all duration-300",
         showButton ? "opacity-100" : "opacity-0 pointer-events-none",
+        "hover:shadow-[0_0_115px_rgba(0,184,219,1)] hover:scale-105",
+        "hover:translate-y-[-5px]",
       )}
     >
       <span

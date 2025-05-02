@@ -9,7 +9,12 @@ import { PROJECTS } from "@/data/projects";
 export const Projects = () => {
   return (
     <section className="relative">
-      <img src={wave} className="w-full absolute top-0" alt="wave" />
+      <img
+        src={wave}
+        className="w-full absolute top-0"
+        alt="wave"
+        draggable="false"
+      />
       <div
         className={cn(
           "container py-32",
@@ -24,7 +29,10 @@ export const Projects = () => {
 
         <div className="flex flex-col gap-[16rem]">
           {PROJECTS.map((project, index) => (
-            <div className="relative" key={project.name}>
+            <div
+              className="relative shadow-xl shadow-purple/10"
+              key={project.name}
+            >
               <div
                 className={cn(
                   "py-8 px-4 bg-white/10 rounded",
@@ -37,6 +45,7 @@ export const Projects = () => {
                   className="rounded w-full"
                   src={project.image}
                   alt={project.name}
+                  draggable="false"
                 />
                 <div className="flex flex-col gap-8 justify-between max-w-[700px]">
                   <div className="flex flex-col gap-8">
@@ -56,12 +65,11 @@ export const Projects = () => {
                   <div className="bg-gradient-to-r from-cyan to-blue cursor-pointer rounded p-0.5">
                     <a
                       className={cn(
-                        "flex items-center justify-center gap-2",
+                        "flex items-center justify-center gap-2 group",
                         "py-2 px-4 font-extrabold text-base",
                         "bg-black text-white rounded",
-                        "transition-colors duration-300",
-                        "hover:bg-transparent",
-                        "group",
+                        "transition-all duration-300",
+                        "hover:shadow-[0_0_15px_rgba(0,184,219,1)]",
                       )}
                       href="#"
                       target="_blank"
@@ -70,7 +78,7 @@ export const Projects = () => {
                       View More
                       <img
                         src={viewMore}
-                        className="w-5 h-5 group-hover:opacity-0"
+                        className="w-5 h-5"
                         alt="download icon"
                       />
                     </a>

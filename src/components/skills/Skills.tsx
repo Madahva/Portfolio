@@ -23,7 +23,10 @@ export const Skills = () => {
             rel="noopener noreferrer"
             className={cn(
               "bg-transparent w-42 h-16 rounded cursor-pointer border border-blue",
-              "flex justify-center items-center gap-4",
+              "flex justify-center items-center gap-4 z-1",
+              "transition-all duration-300 hover:border-cyan hover:bg-blue/10",
+              "hover:shadow-[0_0_15px_rgba(0,184,219,0.5)] hover:scale-105",
+              "hover:translate-y-[-5px]",
             )}
           >
             <img
