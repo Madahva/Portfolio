@@ -22,7 +22,7 @@ export const Skills = () => {
             target="_blank"
             rel="noopener noreferrer"
             className={cn(
-              "bg-white w-42 h-16 rounded cursor-pointer",
+              "bg-transparent w-42 h-16 rounded cursor-pointer border border-blue",
               "flex justify-center items-center gap-4",
             )}
           >
@@ -32,7 +32,7 @@ export const Skills = () => {
               draggable="false"
               alt={skill.name}
             />
-            <p key={index} className="text-black font-extrabold font-sora">
+            <p key={index} className="text-white font-extrabold font-sora">
               {skill.name}
             </p>
           </a>

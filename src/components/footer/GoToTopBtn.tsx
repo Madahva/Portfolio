@@ -25,7 +25,7 @@ export const ScrollToTopButton = () => {
     }
 
     window.requestAnimationFrame(() => {
-      if (window.scrollY > 200) {
+      if (window.scrollY > 400) {
         setShowButton(true);
       } else {
         setShowButton(false);
