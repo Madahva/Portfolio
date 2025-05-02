@@ -1,7 +1,6 @@
 import { cn } from "@/lib/utils";
-import { AuroraText } from "@/components/hero/AuroraText";
 
-import hero from "@/assets/hero/hero.svg";
+import { AuroraText } from "@/components/hero/AuroraText";
 import { SocialLinks } from "@/components/hero/ContactLinks";
 
 export const Hero = () => {
@@ -36,9 +35,11 @@ export const Hero = () => {
         <SocialLinks />
       </div>
       <img
-        src={hero}
-        alt="programmer image"
         className="max-w-[350px] lg:max-w-none lg:w-[550px]"
+        src="/lcp/hero.svg"
+        alt="programmer image"
+        fetchPriority="high"
+        loading="eager"
       />
     </section>
   );

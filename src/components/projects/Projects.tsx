@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 
-import wave from "@/assets/wave.svg";
+import wave from "@/assets/projects/wave.svg";
 import viewMore from "@/assets/projects/viewMore.svg";
 
 import { Divider } from "@/components/navbar/Devider";

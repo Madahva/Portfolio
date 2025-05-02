@@ -1,4 +1,4 @@
-import githubLogo from "@/assets/github-white.svg";
+import githubLogo from "@/assets/socials/github-white.svg";
 
 export const Github = () => {
   return (

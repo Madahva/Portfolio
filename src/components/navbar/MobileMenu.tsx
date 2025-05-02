@@ -1,9 +1,11 @@
 import { useState } from "react";
 
 import { cn } from "@/lib/utils";
-import close from "@/assets/close.svg";
-import { HamburgerMenu } from "@/components/navbar/HamburgerMenu";
+
 import { NAV_ITEMS } from "@/data/navItems";
+
+import close from "@/assets/navbar/close.svg";
+import { HamburgerMenu } from "@/components/navbar/HamburgerMenu";
 import { Divider } from "@/components/navbar/Devider";
 import { ResumeLink } from "@/components/navbar/ResumeLink";
 

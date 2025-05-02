@@ -1,4 +1,4 @@
-import linkedInLogo from "@/assets/linkedin.svg";
+import linkedInLogo from "@/assets/socials/linkedin.svg";
 
 export const LinkedIn = () => {
   return (

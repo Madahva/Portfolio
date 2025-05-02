@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import downloadIcon from "@/assets/download.svg";
+import downloadIcon from "@/assets/navbar/download.svg";
 import resume from "@/assets/resume.pdf";
 
 export const ResumeLink = () => {
