@@ -1,33 +1,72 @@
+import { useEffect, useState, useCallback } from "react";
+
+import { cn } from "@/lib/utils";
+
 import goToTopBtn from "@/assets/footer/goToTop.svg";
 
 export const ScrollToTopButton = () => {
-  window.onscroll = function () {
-    if (
-      document.body.scrollTop > 20 ||
-      document.documentElement.scrollTop > 20
-    ) {
-      const toTopBtn = document.getElementById("toTopBtn");
-      toTopBtn!.style.display = "block";
-    } else {
-      const toTopBtn = document.getElementById("toTopBtn");
-      toTopBtn!.style.display = "none";
-
-      toTopBtn!.classList.remove("active");
-    }
-  };
+  const [showButton, setShowButton] = useState(false);
 
   const goToTop = () => {
-    document.documentElement.scrollTo({
+    window.scrollTo({
       top: 0,
+      behavior: "smooth",
     });
-
-    const toTopBtn = document.querySelector("#toTopBtn");
-    toTopBtn!.classList.add("active");
   };
 
+  const handleScroll = useCallback(() => {
+    if (!window.requestAnimationFrame) {
+      if (window.scrollY > 400) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+      return;
+    }
+
+    window.requestAnimationFrame(() => {
+      if (window.scrollY > 200) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    });
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    handleScroll();
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [handleScroll]);
+
   return (
-    <span id="toTopBtn" onClick={goToTop}>
-      <img src={goToTopBtn} className="h-8 lg:h-16 cursor-pointer" alt="Go to top of the page" />
-    </span>
+    <div
+      className={cn(
+        "bg-gradient-to-r from-cyan to-blue",
+        "cursor-pointer rounded p-0.5",
+        "fixed bottom-4 right-4 lg:bottom-8 lg:right-8",
+        "transition-opacity duration-300",
+        showButton ? "opacity-100" : "opacity-0 pointer-events-none",
+      )}
+    >
+      <span
+        className={cn(
+          "flex items-center justify-center py-4 px-2",
+          "bg-black rounded",
+        )}
+        onClick={goToTop}
+        aria-label="Scroll to top of page"
+      >
+        <img
+          src={goToTopBtn}
+          className="h-6 lg:h-10 cursor-pointer"
+          alt="Go to top of the page"
+        />
+      </span>
+    </div>
   );
 };

@@ -19,7 +19,7 @@ export const Experience = () => {
         <div
           className={cn(
             "flex flex-col justify-between gap-4",
-            "border border-[#71717A] rounded p-4 max-w-[1200px]",
+            "border border-blue rounded p-4 max-w-[1200px]",
             "lg:p-8",
           )}
           key={exp.name}

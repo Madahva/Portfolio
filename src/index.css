@@ -4,6 +4,10 @@
 @import "tailwindcss";
 @theme {
   --color-white: #e8e9ff;
+  --color-cyan: #00B8DB;
+  --color-purple: #5700FF;
+  --color-blue: #2B7FFF;
+  --color-dark-blue: #000654;
   --color-text-secondary: #c5bdff;
   --font-raleway: "Raleway", "sans-serif";
   --font-sora: "Sora", "sans-serif";

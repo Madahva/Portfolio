@@ -10,9 +10,9 @@ export const SocialLinks = () => {
           key={social.name}
           href={social.link}
           className={cn(
-            "cursor-pointer border border-[#00A8FF] rounded py-2 px-4 font-bold flex-1",
+            "cursor-pointer border border-blue rounded py-2 px-4 font-bold flex-1",
             "transition duration-300",
-            "hover:bg-white hover:text-black",
+            "hover:bg-gradient-to-r from-cyan to-blue"
           )}
           target="_blank"
           rel="noopener noreferrer"

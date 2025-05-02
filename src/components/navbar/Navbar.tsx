@@ -29,7 +29,7 @@ export const Navbar = () => {
                 </a>
                 <span
                   className={cn(
-                    "bg-gradient-to-r from-cyan-500 to-blue-500",
+                    "bg-gradient-to-r from-cyan to-blue",
                     "absolute left-0 bottom-0 w-full h-0.5 scale-x-0 origin-left",
                     "transition-transform duration-300",
                     "group-hover:scale-x-100",

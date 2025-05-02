@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 
-import hero from "@/assets/hero.svg";
+import hero from "@/assets/hero/hero.svg";
 import { SocialLinks } from "@/components/hero/ContactLinks";
 
 export const Hero = () => {

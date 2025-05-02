@@ -5,7 +5,7 @@ type props = {
 export const Divider = ({ className }: props) => {
   return (
     <div
-      className={`absolute bottom-0 w-full h-[1px] bg-gradient-to-r from-[#ffffff00] via-[#00A8FF80] to-[#ffffff00] left-1/2 transform -translate-x-1/2 ${className}`}
+      className={`absolute bottom-0 w-full h-[1px] bg-gradient-to-r from-transparent via-blue/50 to-transparent left-1/2 transform -translate-x-1/2 ${className}`}
     ></div>
   );
 };

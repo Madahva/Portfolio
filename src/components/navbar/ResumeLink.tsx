@@ -4,7 +4,7 @@ import resume from "@/assets/resume.pdf";
 
 export const ResumeLink = () => {
   return (
-    <div className="bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer rounded p-0.5">
+    <div className="bg-gradient-to-r from-cyan to-blue cursor-pointer rounded p-0.5">
       <a
         className={cn(
           "flex items-center justify-center gap-2",

@@ -44,13 +44,16 @@ export const Projects = () => {
                     <p className="text">{project.description}</p>
                   </div>
                   <div className="flex flex-wrap gap-4">
-                    {project.technologies.map((technology) => (
-                      <span className="bg-[#000654] border border-[#00A8FF] rounded py-2 p-4 text-white capitalize font-bold text-xs font-sora">
+                    {project.technologies.map((technology, index) => (
+                      <span
+                        key={index}
+                        className="bg-dark-blue border border-cyan rounded py-2 p-4 text-white capitalize font-bold text-xs font-sora"
+                      >
                         {technology}
                       </span>
                     ))}
                   </div>
-                  <div className="bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer rounded p-0.5">
+                  <div className="bg-gradient-to-r from-cyan to-blue cursor-pointer rounded p-0.5">
                     <a
                       className={cn(
                         "flex items-center justify-center gap-2",
@@ -58,6 +61,7 @@ export const Projects = () => {
                         "bg-black text-white rounded",
                         "transition-colors duration-300",
                         "hover:bg-transparent",
+                        "group",
                       )}
                       href="#"
                       target="_blank"
@@ -66,7 +70,7 @@ export const Projects = () => {
                       View More
                       <img
                         src={viewMore}
-                        className="w-5 h-5"
+                        className="w-5 h-5 group-hover:opacity-0"
                         alt="download icon"
                       />
                     </a>

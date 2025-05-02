@@ -1,6 +1,5 @@
 import { LinkedIn } from "@/components/footer/LinkedIn";
 import { Github } from "@/components/footer/Github";
-import { ScrollToTopButton } from "@/components/footer/GoToTopBtn";
 
 export const Footer = () => {
   return (
@@ -11,7 +10,7 @@ export const Footer = () => {
             Big ideas start with a conversation —{" "}
             <span className="relative inline-block">
               <span
-                className="absolute -inset-1 bg-gradient-to-r from-[#0029FF] to-[#00A8FF] opacity-50 blur-md rounded-md animate-glow"
+                className="absolute -inset-1 bg-gradient-to-r from-cyan to-purple blur-md rounded-md animate-glow"
                 aria-hidden="true"
               ></span>
               <a
@@ -29,17 +28,10 @@ export const Footer = () => {
               <LinkedIn />
               <Github />
             </div>
-
-            <div className=" lg:hidden">
-              <ScrollToTopButton />
-            </div>
           </div>
           <p className="text text-xs lg:text-base">
             Designed and developed by Guillermo © 2025
           </p>
-        </div>
-        <div className="hidden lg:block">
-          <ScrollToTopButton />
         </div>
       </div>
     </div>
