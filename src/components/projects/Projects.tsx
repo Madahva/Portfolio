@@ -1,7 +1,6 @@
 import { cn } from "@/lib/utils";
 
 import wave from "@/assets/projects/wave.svg";
-import viewMore from "@/assets/projects/viewMore.svg";
 
 import { Divider } from "@/components/navbar/Devider";
 import { PROJECTS } from "@/data/projects";
@@ -46,6 +45,9 @@ export const Projects = () => {
                   src={project.image}
                   alt={project.name}
                   draggable="false"
+                  loading="lazy"
+                  width={350}
+                  height={160}
                 />
                 <div className="flex flex-col gap-8 justify-between max-w-[700px]">
                   <div className="flex flex-col gap-8">
@@ -76,11 +78,6 @@ export const Projects = () => {
                       rel="noopener noreferrer"
                     >
                       View More
-                      <img
-                        src={viewMore}
-                        className="w-5 h-5"
-                        alt="download icon"
-                      />
                     </a>
                   </div>
                 </div>

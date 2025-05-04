@@ -1,7 +1,6 @@
 import { cn } from "@/lib/utils";
 
 import { EXPERIENCE } from "@/data/experience";
-import { Particles } from "@/components/animetedBackgrounds/Particles";
 
 export const Experience = () => {
   return (
@@ -27,7 +26,13 @@ export const Experience = () => {
         >
           <div className="flex justify-between items-center">
             <div className="flex gap-4">
-              <img src={exp.logo} alt={exp.name} className="h-6" />
+              <img
+                src={exp.logo}
+                alt={exp.name}
+                width={24}
+                height={24}
+                className="h-6"
+              />
               <h3 className="font-extrabold text-lg">
                 {exp.title} at {exp.name}
               </h3>
@@ -39,15 +44,6 @@ export const Experience = () => {
           <p className="text">{exp.description}</p>
         </div>
       ))}
-      <Particles
-        className="absolute inset-0 z-0"
-        quantity={100}
-        color="#5700ff"
-        size={1.5}
-        refresh
-        vx={0.2}
-        vy={-0.5}
-      />
     </section>
   );
 };

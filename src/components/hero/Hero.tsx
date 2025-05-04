@@ -38,8 +38,8 @@ export const Hero = () => {
         className="max-w-[350px] lg:max-w-none lg:w-[550px]"
         src="/lcp/hero.svg"
         alt="programmer image"
-        fetchPriority="high"
-        loading="eager"
+        width={350}
+        height={350}
       />
     </section>
   );

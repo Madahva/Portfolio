@@ -1,6 +1,6 @@
 import libertun from "@/assets/experience/libertum.ico";
-import envwise from "@/assets/experience/envwise.png";
-import henry from "@/assets/experience/henry.png";
+import envwise from "@/assets/experience/envwise.webp";
+import henry from "@/assets/experience/henry.webp";
 
 export const EXPERIENCE = [
   {

@@ -31,6 +31,8 @@ export const Skills = () => {
           >
             <img
               src={skill.icon}
+              width={32}
+              height={32}
               className="w-8"
               draggable="false"
               alt={skill.name}

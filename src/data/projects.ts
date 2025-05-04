@@ -1,5 +1,5 @@
-import libertun from "@/assets/projects/libertum.png";
-import envwise from "@/assets/projects/envwise.png";
+import libertun from "@/assets/projects/libertum.webp";
+import envwise from "@/assets/projects/envwise.webp";
 
 export const PROJECTS = [
   {
