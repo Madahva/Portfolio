@@ -1,7 +1,4 @@
-import { motion } from "motion/react";
-
 import { cn } from "@/lib/utils";
-import { jumpVerticalVariant } from "@/data/animations";
 
 import { AuroraText } from "@/components/hero/AuroraText";
 import { SocialLinks } from "@/components/hero/ContactLinks";
@@ -15,13 +12,7 @@ export const Hero = () => {
       )}
       id="about"
     >
-      <motion.div
-        variants={jumpVerticalVariant}
-        initial="initial"
-        animate="final"
-        transition={{ duration: 0.5 }}
-        className="flex flex-col max-w-[600px] gap-8"
-      >
+      <div className="flex flex-col max-w-[600px] gap-8">
         <h1 className="text-4xl lg:text-5xl leading-11 max-w-[500px] lg:leading-15">
           Hello, I'm
           <span className="font-extrabold">
@@ -42,17 +33,13 @@ export const Hero = () => {
           </p>
         </div>
         <SocialLinks />
-      </motion.div>
-      <motion.img
+      </div>
+      <img
         className="max-w-[350px] lg:max-w-none lg:w-[550px]"
         src="/lcp/hero.svg"
         alt="programmer image"
         width={350}
         height={350}
-        variants={jumpVerticalVariant}
-        initial="initial"
-        animate="final"
-        transition={{ duration: 0.5 }}
       />
     </section>
   );
