@@ -1,3 +1,7 @@
+import { motion } from "motion/react";
+
+import { opacityVariant } from "@/data/animations";
+
 import { Navbar } from "@/components/navbar/Navbar";
 import { Hero } from "@/components/hero/Hero";
 import { Skills } from "@/components/skills/Skills";
@@ -13,7 +17,12 @@ import { cn } from "@/lib/utils";
 
 function App() {
   return (
-    <>
+    <motion.main
+      variants={opacityVariant}
+      initial="initial"
+      animate="final"
+      transition={{ duration: 1.5 }}
+    >
       <Navbar />
       <div className="relative">
         <Hero />
@@ -44,7 +53,7 @@ function App() {
       </div>
 
       <ScrollToTopButton />
-    </>
+    </motion.main>
   );
 }
 

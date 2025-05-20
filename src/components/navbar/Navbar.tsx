@@ -1,4 +1,7 @@
+import { motion } from "motion/react";
+
 import { cn } from "@/lib/utils";
+import { jumpVerticalVariant } from "@/data/animations";
 import { NAV_ITEMS } from "@/data/navItems";
 
 import { ResumeLink } from "@/components/navbar/ResumeLink";
@@ -18,8 +21,19 @@ export const Navbar = () => {
           <ul
             className={cn("flex items-center gap-8", "font-extrabold text-lg")}
           >
-            {NAV_ITEMS.map((link) => (
-              <li className="relative group" key={link.name}>
+            {NAV_ITEMS.map((link, index) => (
+              <motion.li
+                className="relative group"
+                key={link.name}
+                variants={jumpVerticalVariant}
+                initial="initial"
+                animate="final"
+                transition={{
+                  duration: 0.2 + index * 0.1,
+                  type: "spring",
+                  delay: 0.3,
+                }}
+              >
                 <a
                   href={`${link.href}`}
                   target={link.target}
@@ -35,7 +49,7 @@ export const Navbar = () => {
                     "group-hover:scale-x-100",
                   )}
                 ></span>
-              </li>
+              </motion.li>
             ))}
           </ul>
 
