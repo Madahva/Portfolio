@@ -1,9 +1,11 @@
+import { motion } from "motion/react";
+import { jumpVerticalVariant } from "@/data/animations";
 import { cn } from "@/lib/utils";
+import { PROJECTS } from "@/data/projects";
 
 import wave from "@/assets/projects/wave.svg";
 
 import { Divider } from "@/components/navbar/Devider";
-import { PROJECTS } from "@/data/projects";
 
 export const Projects = () => {
   return (
@@ -28,9 +30,13 @@ export const Projects = () => {
 
         <div className="flex flex-col gap-[16rem]">
           {PROJECTS.map((project, index) => (
-            <div
+            <motion.div
               className="relative shadow-xl shadow-purple/10"
               key={project.name}
+              variants={jumpVerticalVariant}
+              initial="initial"
+              whileInView="final"
+              transition={{ duration: 0.3, delay: index * 0.1 }}
             >
               <div
                 className={cn(
@@ -86,7 +92,7 @@ export const Projects = () => {
               {index < PROJECTS.length - 1 && (
                 <Divider className="bottom-[-8rem]" />
               )}
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

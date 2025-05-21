@@ -1,5 +1,7 @@
-import { cn } from "@/lib/utils";
+import { motion } from "motion/react";
 
+import { cn } from "@/lib/utils";
+import { opacityVariant } from "@/data/animations";
 import { SKILLS } from "@/data/techStack";
 
 export const Skills = () => {
@@ -14,7 +16,13 @@ export const Skills = () => {
           and build great products.
         </p>
       </div>
-      <div className="flex flex-wrap gap-8 justify-center">
+      <motion.div
+        className="flex flex-wrap gap-8 justify-center"
+        variants={opacityVariant}
+        initial="initial"
+        whileInView="final"
+        transition={{ duration: 1, delay: 0.3 }}
+      >
         {SKILLS.map((skill, index) => (
           <a
             key={index}
@@ -42,7 +50,7 @@ export const Skills = () => {
             </p>
           </a>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 };
