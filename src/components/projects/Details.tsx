@@ -1,5 +1,8 @@
 import { Link, useParams } from "react-router-dom";
+import { motion } from "motion/react";
 
+import { opacityVariant } from "@/data/animations";
+import { jumpVerticalVariant } from "@/data/animations";
 import { PROJECTS } from "@/data/projects";
 import { cn } from "@/lib/utils";
 
@@ -26,17 +29,32 @@ export const Details = () => {
 
   return (
     <>
-      <main className="flex flex-col justify-start items-center p-4 pb-20 lg:pt-20">
+      <motion.main
+        variants={opacityVariant}
+        initial="initial"
+        animate="final"
+        transition={{ duration: 1.5 }}
+        className="flex flex-col justify-start items-center p-4 pb-20 lg:pt-20"
+      >
         <nav
           className={cn(
             "sticky top-0 left-0 w-full max-w-[1000px]",
             "bg-black/10 backdrop-blur-sm z-20",
           )}
         >
-          <Link to="/" className="flex gap-4 text-left w-full pt-5 pb-5">
-            <img src={arrow} alt="go back" />
-            Back to Portfolio
-          </Link>
+          <div className="relative w-full pt-5 pb-5">
+            <Link to="/" className="flex gap-4 text-left w-fit group relative">
+              <img src={arrow} alt="go back" />
+              Back to Portfolio
+              <span
+                className={cn(
+                  "absolute bottom-0 left-0 h-0.5 w-full bg-gradient-to-r from-cyan to-blue",
+                  "origin-left transform scale-x-0 group-hover:scale-x-100",
+                  "transition-transform duration-300 ease-out",
+                )}
+              />
+            </Link>
+          </div>
         </nav>
         <section className="w-full max-w-[1000px] flex flex-col gap-16">
           <div className="flex flex-col gap-4">
@@ -44,7 +62,7 @@ export const Details = () => {
 
             <div className="flex gap-4 justify-between lg:justify-start">
               <div className="flex gap-2 justify-left items-center">
-                <img src={calendar} alt="calendar" width={24} height={24} />
+                <img src={calendar} alt="calendar" width={16} height={16} />
                 <p className="text-sm">{project.duration}</p>
               </div>
 
@@ -92,21 +110,23 @@ export const Details = () => {
               </div>
 
               {project.url && (
-                <a
+                <motion.a
                   className="italic text-blue-500 underline flex items-center"
                   href={project.url}
                   target="_blank"
                   rel="noopener noreferrer"
+                  whileHover={{ scale: 1.01, x: 5 }}
+                  transition={{ type: "spring", stiffness: 300 }}
                 >
                   <img src={linkLogo} alt="link" width={24} height={24} />
                   {project.url}
-                </a>
+                </motion.a>
               )}
             </div>
           </div>
 
           <img
-            className="rounded z-10"
+            className="rounded z-10 shadow-xl shadow-purple/10"
             src={project.image}
             alt={project.name}
             draggable="false"
@@ -150,17 +170,26 @@ export const Details = () => {
             </h3>
             <div className="flex flex-wrap gap-4">
               {project.technologies.map((technology, index) => (
-                <span
+                <motion.span
                   key={index}
                   className="bg-dark-blue border border-cyan rounded py-2 p-4 text-white capitalize font-bold text-xs font-sora"
+                  variants={jumpVerticalVariant}
+                  initial="initial"
+                  whileInView="final"
+                  transition={{
+                    duration: 0.2 + index * 0.1,
+                    type: "spring",
+                    stiffness: 200,
+                    delay: 0.3,
+                  }}
                 >
                   {technology}
-                </span>
+                </motion.span>
               ))}
             </div>
           </div>
         </section>
-      </main>
+      </motion.main>
 
       <ScrollToTopButton />
       <Footer />

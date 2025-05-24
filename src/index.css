@@ -32,6 +32,10 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    ::selection {
+      color: var(--color-white);
+      background: var(--color-purple);
+    }
   }
 
   body {
