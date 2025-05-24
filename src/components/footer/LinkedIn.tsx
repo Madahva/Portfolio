@@ -9,7 +9,7 @@ export const LinkedIn = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src={linkedInLogo} className="w-6 h-6 fill-white" alt="" />
+        <img src={linkedInLogo} className="w-6 h-6 fill-white" alt="linkedIn Logo" />
       </a>
       <span
         className="absolute -top-14 left-[50%] -translate-x-[50%] 

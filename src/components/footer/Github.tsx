@@ -9,7 +9,7 @@ export const Github = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src={githubLogo} className="w-6 h-6 fill-white" alt="" />
+        <img src={githubLogo} className="w-6 h-6 fill-white" alt="github Logo" />
       </a>
       <span
         className="absolute -top-14 left-[50%] -translate-x-[50%] 

@@ -130,15 +130,14 @@ export const Details = () => {
             src={project.image}
             alt={project.name}
             draggable="false"
-            loading="lazy"
             width={550}
             height={321}
           />
 
           <div className="flex flex-col gap-8">
-            <h3 className="text-4xl">
+            <h2 className="text-4xl">
               Project <span className="font-extrabold">Description</span>
-            </h3>
+            </h2>
             <p className="text">{project.description2}</p>
             <p className="text">{project.description}</p>
           </div>
@@ -148,9 +147,9 @@ export const Details = () => {
           </div>
 
           <div className="flex flex-col gap-8">
-            <h3 className="text-4xl">
+            <h2 className="text-4xl">
               Key <span className="font-extrabold">Responsibilities</span>
-            </h3>
+            </h2>
             <ul className="flex flex-col gap-4">
               {project.responsibilities.map((responsibility, index) => (
                 <li className="text" key={index}>

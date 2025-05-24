@@ -15,7 +15,7 @@ export const HamburgerMenu = ({ handleClick }: props) => {
   };
 
   return (
-    <button onClick={handleButtonClick}>
+    <button onClick={handleButtonClick} aria-label="Toggle menu">
       <label className="relative w-10 h-7.5 cursor-pointer flex flex-col justify-between">
         <input
           ref={checkboxRef}

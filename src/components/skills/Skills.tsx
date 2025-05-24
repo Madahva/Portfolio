@@ -43,7 +43,7 @@ export const Skills = () => {
               height={32}
               className="w-8"
               draggable="false"
-              alt={skill.name}
+              alt={skill.name + " logo"}
             />
             <p key={index} className="text-white font-extrabold font-sora">
               {skill.name}
