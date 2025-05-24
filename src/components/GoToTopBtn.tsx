@@ -57,7 +57,7 @@ export const ScrollToTopButton = () => {
     >
       <span
         className={cn(
-          "flex items-center justify-center py-4 px-2",
+          "flex items-center justify-center py-4 px-2.5",
           "bg-black rounded",
         )}
         onClick={goToTop}

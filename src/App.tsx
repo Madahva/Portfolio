@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 
 import { opacityVariant } from "@/data/animations";
+import { cn } from "@/lib/utils";
 
 import { Navbar } from "@/components/navbar/Navbar";
 import { Hero } from "@/components/hero/Hero";
@@ -12,8 +13,6 @@ import { Footer } from "@/components/footer/Footer";
 import { ScrollToTopButton } from "@/components/GoToTopBtn";
 import { InteractiveGridPattern } from "@/components/animetedBackgrounds/InteractiveGridPattern";
 import { Particles } from "@/components/animetedBackgrounds/Particles";
-
-import { cn } from "@/lib/utils";
 
 function App() {
   return (

@@ -1,4 +1,6 @@
 import { motion } from "motion/react";
+import { Link } from "react-router-dom";
+
 import { jumpVerticalVariant } from "@/data/animations";
 import { cn } from "@/lib/utils";
 import { PROJECTS } from "@/data/projects";
@@ -41,22 +43,27 @@ export const Projects = () => {
               <div
                 className={cn(
                   "py-8 px-4 bg-white/10 rounded",
-                  "flex flex-col gap-8",
+                  "flex flex-col gap-8 group",
                   "xl:flex-row lg:p-8",
                   index % 2 !== 0 && "xl:flex-row-reverse",
                 )}
               >
-                <img
-                  className="rounded w-full"
-                  src={project.image}
-                  alt={project.name}
-                  draggable="false"
-                  loading="lazy"
-                  width={350}
-                  height={160}
-                />
+                <Link
+                  to={`/projects/${project.name.toLowerCase().replace(/\s+/g, "-")}`}
+                  className="z-10"
+                >
+                  <img
+                    className="rounded w-full"
+                    src={project.image}
+                    alt={project.name}
+                    draggable="false"
+                    loading="lazy"
+                    width={350}
+                    height={160}
+                  />
+                </Link>
                 <div className="flex flex-col gap-8 justify-between max-w-[700px]">
-                  <div className="flex flex-col gap-8">
+                  <div className="flex flex-col gap-2">
                     <h3 className="font-extrabold text-2xl">{project.name}</h3>
                     <p className="text">{project.description}</p>
                   </div>
@@ -71,20 +78,19 @@ export const Projects = () => {
                     ))}
                   </div>
                   <div className="bg-gradient-to-r from-cyan to-blue cursor-pointer rounded p-0.5">
-                    <a
+                    <Link
+                      to={`/projects/${project.name.toLowerCase().replace(/\s+/g, "-")}`}
                       className={cn(
                         "flex items-center justify-center gap-2 group",
                         "py-2 px-4 font-extrabold text-base",
                         "bg-black text-white rounded",
                         "transition-all duration-300",
                         "hover:shadow-[0_0_15px_rgba(0,184,219,1)]",
+                        "group-hover:shadow-[0_0_15px_rgba(0,184,219,1)]",
                       )}
-                      href="#"
-                      target="_blank"
-                      rel="noopener noreferrer"
                     >
                       View More
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
