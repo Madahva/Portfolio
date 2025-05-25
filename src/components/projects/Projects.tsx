@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
 
-import { jumpVerticalVariant } from "@/data/animations";
+import { opacityVariant } from "@/data/animations";
 import { cn } from "@/lib/utils";
 import { PROJECTS } from "@/data/projects";
 
@@ -35,7 +35,7 @@ export const Projects = () => {
             <motion.div
               className="relative shadow-xl shadow-purple/10"
               key={project.name}
-              variants={jumpVerticalVariant}
+              variants={opacityVariant}
               initial="initial"
               whileInView="final"
               transition={{ duration: 0.3, delay: index * 0.1 }}
